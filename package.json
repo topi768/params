@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "сброка gulp",
   "main": "index.html",
-  "homepage": "https://topi768.github.io/PEx-new/",
+  "homepage": "https://topi768.github.io/params/",
   "scripts": {
     "deploy": "gh-pages -d dist"
   },

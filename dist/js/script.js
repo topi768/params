@@ -1,25 +1,11 @@
-// let screenWidth = window.screen.width
-//
-// function mobileStyle() {
-//   if (screenWidth >= 900) {
-//     console.log('sfe');
-//     var changingClassesInNavigation = document.getElementById("nav");
-//     changingClassesInNavigation.classList.toggle("burger-none");
-//   } else {
-//     var changingClasses = document.getElementById("screenWidth");
-//     changingClasses.classList.toggle("nav-none");
-//   }
-// }
-// mobileStyle();
-//
-//   function burger() {
-//     let body = document.getElementsByTagName( 'body' )[0];
-//     let html = document.getElementsByTagName( 'html' )[0]
-//     body.classList.toggle('lock');
-//     html.classList.toggle('lock');
-//   }
+// числа + biglnt
 
-///
-document.getElementById("progressBar1").value = 78;
-document.getElementById("progressBar2").value = 90;
-document.getElementById("progressBar3").value = 65;
+// const integer = 42
+// const float = 42.42
+// const pow = 10e3
+// console.log(pow);
+
+console.log("MAX_SAFE_INTEGER: ",Number.MAX_SAFE_INTEGER)
+console.log("MIN_SAFE_INTEGER: ",Number.MIN_SAFE_INTEGER);
+console.log("MAX_VALUE: ", Number.MAX_VALUE);
+console.log("MIN_VALUE: ", Number.MIN_VALUE);

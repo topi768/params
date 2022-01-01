@@ -170,9 +170,9 @@ let { src, dest } = require('gulp'),
 
 ///
 
-function video() {
-    return gulp.src([source_folder + '/video/*'])
-    .pipe(gulp.dest('dist/video'));
+function ico() {
+    return gulp.src([source_folder + '/ico/*'])
+    .pipe(gulp.dest('dist/ico'));
 }
 
 function iconsfonts() {
@@ -226,13 +226,13 @@ function cb() {}
     return del(path.clean);
   }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, video, iconsfonts),fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, ico, iconsfonts),fontsStyle);
 // let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.iconsfonts = iconsfonts;
-exports.video = video;
+exports.ico = ico;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.images = images;

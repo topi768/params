@@ -54,7 +54,8 @@ $maxWidth: 1350;
 $blue: #4276d7;
 $black: #373F41;
 $grey: #737B7D;
-// $white:  #5d6669;
+$white:  #d6dfdf;
+$whiteGrey: #869094;
 //
 h1, h2, h3, h4, h5, h6  {
   font-family: Mulish;
@@ -155,11 +156,13 @@ main {
       max-width: clamp(400px, 40%, 45%);
       z-index: 10;
       h1 {
-        color: $black;
+        color: $white;
         margin: 0 0 4% 0;
       }
       p {
-        color: $grey;
+        // color: $grey;
+        color: $whiteGrey;
+
       }
     }
   }

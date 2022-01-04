@@ -7315,14 +7315,121 @@ main .container .main__header p {
   margin: 3% 0;
 }
 
-.task .container button {
+.task .container .task__animation {
   position: absolute;
   right: 5%;
   bottom: 5%;
-  padding: 1%;
-  border-radius: 5px;
-  background: #4276d7;
-  color: #d6dfdf;
+}
+
+.task .container .task__animation .checkbox {
+  position: relative;
+  overflow: hidden;
+}
+
+.task .container .task__animation .checkbox .checkbox__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+
+.task .container .task__animation .checkbox .checkbox__label {
+  position: relative;
+  padding: 15px 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  color: #4276d7;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.task .container .task__animation .checkbox .checkbox__line {
+  position: absolute;
+  display: block;
+}
+
+.task .container .task__animation .checkbox .checkbox__line--top {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#4276d7));
+  background: -o-linear-gradient(left, transparent, #4276d7);
+  background: linear-gradient(90deg, transparent, #4276d7);
+}
+
+.task .container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top {
+  left: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.25s;
+       -o-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.task .container .task__animation .checkbox .checkbox__line--right {
+  top: -100%;
+  right: 0%;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#4276d7));
+  background: -o-linear-gradient(top, transparent, #4276d7);
+  background: linear-gradient(180deg, transparent, #4276d7);
+}
+
+.task .container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--right {
+  top: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.task .container .task__animation .checkbox .checkbox__line--bottom {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#4276d7));
+  background: -o-linear-gradient(right, transparent, #4276d7);
+  background: linear-gradient(270deg, transparent, #4276d7);
+}
+
+.task .container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--bottom {
+  right: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0.25s;
+       -o-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.task .container .task__animation .checkbox .checkbox__line--left {
+  bottom: -100%;
+  left: 0%;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#4276d7));
+  background: -o-linear-gradient(bottom, transparent, #4276d7);
+  background: linear-gradient(0deg, transparent, #4276d7);
+}
+
+.task .container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--left {
+  bottom: 100%;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  -webkit-transition-delay: 0s;
+       -o-transition-delay: 0s;
+          transition-delay: 0s;
 }
 
 @media (max-width: 1200px) {

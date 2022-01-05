@@ -1,12 +1,17 @@
 .task {
-  position:  relative;
-  display: flex;
-  align-items: center;
+
   margin: 5% 0 0 0;
   min-height: 250px;
   border-radius: 15px;
   background: #fafafa;
+  position:  relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  // flex-direction:  column;
   .container {
+    height: 100%;
     h2 {
       text-align: center;
       // letter-spacing: 10px;
@@ -19,7 +24,7 @@
     .task__animation {
       position: absolute;
       right: 5%;
-      bottom: 5%;
+      bottom: 0%;
       .checkbox {
         position:  relative;
         overflow: hidden;
@@ -34,65 +39,74 @@
            color: $blue;
            cursor: pointer;
            transition: 0.3s;
-         }
 
+         }
         .checkbox__line {
           position: absolute;
           display: block;
+          background: $blue
         }
-        //top
-        .checkbox__line--top {
+        ////top-left
+        .checkbox__line--top-left {
           top: 0;
-          left: -100%;
-          width: 100%;
+          left: 50%;
+          width: 0%;
           height: 2px;
-          background: linear-gradient(90deg, transparent, $blue)
         }
-        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top{
-          left: 100%;
-          transition: 1s;
+        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-left {
+          width: 50%;
+          transition: 0.5s;
           transition-delay: 0.25s;
         }
-        //right
+        ////top-right
+        .checkbox__line--top-right {
+          top: 0;
+          left: 50%;
+          width: 0%;
+          height: 2px;
+          transform-origin: left;
+          transform:  rotate(180deg);
+
+        }
+        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-right {
+          width: 50%;
+          transition: 0.5s;
+          transition-delay: 0.25s;
+        }
+        ////right
         .checkbox__line--right {
-          top: -100%;
-          right: 0%;
-          width: 2px;;
+          top: 0;
+          right: 0;
+          width: 2px;
+          height: 0%;
+        }
+        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--right {
           height: 100%;
-          background: linear-gradient(180deg, transparent, $blue)
+          transition: 0.65s;
+          transition-delay: 0.75s;
         }
-        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--right{
-          top: 100%;
-          transition: 1s;
-          transition-delay: 0s;
-        }
-        //bottom
-        .checkbox__line--bottom {
-          bottom: 0;
-          right: -100%;
-          width: 100%;
-          height: 2px;
-          background: linear-gradient(270deg, transparent, $blue)
-        }
-        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--bottom{
-          right: 100%;
-          transition: 1s;
-          transition-delay: 0.25s;
-        }
-        //left
+        ////left
         .checkbox__line--left {
-          bottom: -100%;
-          left: 0%;
-          width: 2px;;
+          top: 0;
+          left: 0;
+          width: 2px;
+          height: 0%;
+        }
+        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--left {
           height: 100%;
-          background: linear-gradient(0deg, transparent, $blue)
+          transition: 0.65s;
+          transition-delay: 0.75s;
         }
-        .checkbox__input:checked + .checkbox__label ~ .checkbox__line--left{
-          bottom: 100%;
-          transition: 1s;
-          transition-delay: 0s;
-        }
+        ////answer
+
       }
     }
   }
+  // .answer {
+  //
+  //   width: 100%;
+  //   height: 100px;
+  //   background: red;
+  //
+  // }
 }

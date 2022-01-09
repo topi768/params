@@ -7364,6 +7364,43 @@ main .container .main__header p {
           transform: translate(0, -17%);
 }
 
+footer {
+  min-height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #373F41;
+  color: #869094;
+  font-size: calc(11.2px + 2.8 * ((100vw - 320px) / 1030));
+}
+
+footer .footer__item {
+  white-space: nowrap;
+}
+
+footer .footer__item h4 {
+  font-family: Mulish;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+footer .footer__item p {
+  font-size: calc(9.6px + 2.4 * ((100vw - 320px) / 1030));
+}
+
+footer .footer__item a {
+  margin: 0 3%;
+  color: #869094;
+}
+
 .task {
   background: #fafafa;
   min-height: 250px;

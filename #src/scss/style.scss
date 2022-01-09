@@ -246,6 +246,32 @@ main {
     }
   }
 }
+footer {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $black;
+  color: $whiteGrey;
+  @include adaptiv-font(14);
+  .footer__item {
+     white-space: nowrap;
+    h4 {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    p {
+      @include adaptiv-font(12);
+    }
+    a {
+      margin: 0 3%;
+      color: $whiteGrey;
+    }
+  }
+}
 //
 @import 'burger';
 @import 'difficulties';

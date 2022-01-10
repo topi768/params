@@ -7281,7 +7281,9 @@ nav .nav__item__hover {
 main {
   width: 100%;
   height: 100vh;
-  background: url(../img/main/math.png) no-repeat fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), to(#373F41)), url(../img/main/math.png) no-repeat fixed;
+  background: -o-linear-gradient(top, transparent 70%, #373F41), url(../img/main/math.png) no-repeat fixed;
+  background: linear-gradient(to bottom, transparent 70%, #373F41), url(../img/main/math.png) no-repeat fixed;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -7353,12 +7355,50 @@ main .container .main__header p {
 .difficulty .container .difficulty__item img {
   width: 40px;
   height: 40px;
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.difficulty .container .difficulty__item img:hover {
+.difficulty .container .difficulty__item:hover img {
+  -webkit-transform: translate(0, -17%);
+      -ms-transform: translate(0, -17%);
+          transform: translate(0, -17%);
+}
+
+.opportunities {
+  padding: 5% 0;
+  width: 100%;
+  height: auto;
+}
+
+.opportunities .container {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.opportunities .container .opportunities__item {
+  display: block;
+  margin: 0 5%;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.opportunities .container .opportunities__item img {
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 40px;
+  height: 40px;
+}
+
+.opportunities .container .opportunities__item:hover img {
   -webkit-transform: translate(0, -17%);
       -ms-transform: translate(0, -17%);
           transform: translate(0, -17%);
@@ -7611,6 +7651,18 @@ footer .footer__item a {
   .difficulty .container .difficulty__item {
     margin: 3% 0;
   }
+
+  .opportunities .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .opportunities .container .opportunities__item {
+    margin: 3% 10%;
+    max-width: 30%;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -7766,4 +7818,8 @@ footer .footer__item a {
   }
 }
 
-.webp main{ background: url(../img/main/math.webp) no-repeat fixed; }
+.webp main{ background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, transparent), to(#373F41)), url(../img/main/math.webp) no-repeat fixed; }
+
+.webp main{ background: -o-linear-gradient(top, transparent 70%, #373F41), url(../img/main/math.webp) no-repeat fixed; }
+
+.webp main{ background: linear-gradient(to bottom, transparent 70%, #373F41), url(../img/main/math.webp) no-repeat fixed; }

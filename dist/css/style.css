@@ -7366,6 +7366,53 @@ main .container .main__header p {
           transform: translate(0, -17%);
 }
 
+.pueChart {
+  width: 100%;
+}
+
+.pueChart .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pueChart .container .pueChart__title {
+  max-width: 30%;
+}
+
+.pueChart .container .pueChart__title h2 {
+  display: block;
+  line-height: 2.5rem;
+  margin: 0 0 0.5rem;
+  font-size: calc(25.6px + 6.4 * ((100vw - 320px) / 1030));
+}
+
+.pueChart .container .pueChart__title small {
+  display: block;
+  color: #737B7D;
+  font-size: calc(12.8px + 3.2 * ((100vw - 320px) / 1030));
+}
+
+.pueChart .container .pueChart__title button {
+  float: right;
+  margin: 8% 0 0 0;
+  padding: 4% 9%;
+  border-radius: 5px;
+  background: #4276d7;
+  font-size: calc(12.8px + 3.2 * ((100vw - 320px) / 1030));
+}
+
+.pueChart .container .pueChart__title button a {
+  color: #d6dfdf;
+}
+
+.pueChart .container .pueChart__title button a:visited {
+  color: #d6dfdf;
+}
+
 .opportunities {
   padding: 5% 0;
   width: 100%;
@@ -7662,6 +7709,24 @@ footer .footer__item a {
     max-width: 30%;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%;
+  }
+}
+
+@media (max-width: 800px) {
+  .pueChart .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .pueChart .container .pueChart__pueChar {
+    height: 400px !important;
+  }
+
+  .pueChart .container .pueChart__title {
+    max-width: 100%;
   }
 }
 

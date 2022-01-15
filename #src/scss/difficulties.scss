@@ -16,10 +16,17 @@
     h2 {
       text-align: center;
     }
+    small a{
+      display: block;
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      color: $grey;
+      @include adaptiv-font(13);
+    }
     .task__formula {
       display: flex;
       justify-content: center;
-      margin: 3% 0;
     }
     .task__animation {
       position: absolute;
@@ -27,7 +34,6 @@
       bottom: 0%;
       .checkbox {
         position:  relative;
-        // overflow: hidden;
         .checkbox__input {
           appearance: none;
           position: absolute;

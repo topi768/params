@@ -25,6 +25,8 @@
             <a class="nav__item" href="easy.html">легкие</a>
             <a class="nav__item nav__item__hover" href="medium.html">средние</a>
             <a class="nav__item" href="hard.html">сложные</a>
+            <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+
             <!-- <a class="nav__item" href="easy.html">о нас</a> -->
             <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
           </div>
@@ -38,6 +40,7 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 1</h2>
+
             <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
             <p class="task__formula">(2a - 4)x = 3a + 1</p>
           </div>
@@ -92,12 +95,13 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 3</h2>
+            <small><a href="#">система координат x и a</a></small>
             <p class="task__text">найдите при каких a  ур-е умеет 3 корня</p>
             <p class="task__formula">$$x^2-8x=2| x-a | - 16$$</p>
           </div>
           <div class="task__animation">
             <div class="checkbox">
-              <input type="checkbox" class="checkbox__input" id="3" name="checkbox" value="yes">
+              <input type="checkbox" class="checkbox__input" id="3" name="checkbox"  value="yes">
               <label for="3"  class="checkbox__label">Решение</label>
               <span class="checkbox__line checkbox__line--top-left"></span>
               <span class="checkbox__line checkbox__line--top-right"></span>
@@ -115,7 +119,20 @@
               $$x^2-8x + 16 = 2| x-a |$$
               $$( a - 4)^2 = 2| x-a |$$
               <p>разобьём это уравнение на 2 функции:</p>
-              $$( a - 4)^2 = 2| x-a |$$
+              $$\begin{equation*}
+                 \begin{cases}
+                   y = ( a - 4)^2
+                   \\
+                   y = 2| x-a |
+                   \\
+                 \end{cases}
+                \end{equation*}
+              $$
+              <p>найдем вершину первой функции</p>
+              $$x_{в} = \frac{-b}{2a} = \frac{8}{2} = 4$$
+              $$y_{в} = (4 - 4)^2 = 0$$
+              <p>( 4 ; 0 ) - координаты вершины</p>
+
             </p>
           </div>
         </div>

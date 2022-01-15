@@ -7640,7 +7640,18 @@ footer .footer__item a {
   opacity: 0;
   background: #fafafa;
   position: absolute;
-  top: -100%;
+  top: -10000%;
+}
+
+.task .answer picture,
+.task .answer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
 }
 
 .task .answer .answer__line--top-right {

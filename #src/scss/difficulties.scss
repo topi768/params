@@ -109,7 +109,12 @@
     background: #fafafa;
     // transition: 1s;
     position: absolute;
-    top: -100%;
+    top: -10000%;
+    picture, img {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+    }
     .answer__line--top-right{
       top: 0;
       right: 10%;

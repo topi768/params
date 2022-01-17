@@ -77,8 +77,9 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 2</h2>
+            <small><a href="#">Линейные уравнения</a></small>
             <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
-            <p class="task__formula">(2a - 4)x = 3a + 1</p>
+            <p class="task__formula">$$(a^2 - 2a + 1)x = a^2 + 2a - 3$$</p>
           </div>
           <div class="task__animation" >
             <div class="checkbox">
@@ -96,7 +97,40 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              <p>заметим, что в левой части уравнения формула сокращенного умножения</p>
+              $$ (a - 1)^2 = a^2 + 2a -3 $$
+              $$ 1) (a - 1)^2 = 0 $$
+              $$ a = 1 $$
+              $$ 0x = 0 $$
+              $$ x - любой $$
+              $$ 2) a \neq 1 $$
+              $$ x =  \frac{(a - 1)^2}{a^2 + 2a -3}$$
+              <p>раскладываем знаменатель</p>
+              $$ a^2 + 2a -3 = 0 $$
+              $$\begin{equation*}
+                 \begin{cases}
+                   a_1 + a_2 = -2
+                   \\
+                   a_1 * a_2 = -3
+                   \\
+                 \end{cases}
+                \end{equation*}
+              $$
+              $$\begin{equation*}
+                 \begin{cases}
+                   a_1 = 1
+                   \\
+                    a_2 = -3
+                   \\
+                 \end{cases}
+                \end{equation*}
+              $$
+              $$ a^2 + 2a -3 = (x - 1)(x + 3)  $$
+              $$ x =  \frac{(a - 1)^2}{(x - 1)(x + 3)}$$
+              $$ x =  \frac{(a - 1)}{(x + 3)}$$
+              <p>$$Ответ: если \: a = 1, то \: x \in R; если \:a \neq 1, \: x =  \frac{(a - 1)}{(x + 3)} $$</p>
+            </p>
           </div>
         </div>
       </section>

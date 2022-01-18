@@ -7704,6 +7704,15 @@ footer .footer__item a {
           justify-content: center;
 }
 
+.content__item h1,
+.content__item h2,
+.content__item h3,
+.content__item h4,
+.content__item h5,
+.content__item h6 {
+  text-align: center;
+}
+
 @media (max-width: 1200px) {
   .difficulty .container {
     -webkit-box-orient: vertical;

@@ -7511,6 +7511,15 @@ footer .footer__item a {
   text-align: center;
 }
 
+.task .task__container small a {
+  display: block;
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  color: #737B7D;
+  font-size: calc(10.4px + 2.6 * ((100vw - 320px) / 1030));
+}
+
 .task .task__container .task__formula {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7518,7 +7527,6 @@ footer .footer__item a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 3% 0;
 }
 
 .task .task__container .task__animation {
@@ -7632,7 +7640,18 @@ footer .footer__item a {
   opacity: 0;
   background: #fafafa;
   position: absolute;
-  top: -100%;
+  top: -10000%;
+}
+
+.task .answer picture,
+.task .answer img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 100%;
 }
 
 .task .answer .answer__line--top-right {
@@ -7685,6 +7704,15 @@ footer .footer__item a {
   -webkit-transition-delay: 1.15s;
        -o-transition-delay: 1.15s;
           transition-delay: 1.15s;
+}
+
+.content__item picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 1200px) {

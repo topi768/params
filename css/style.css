@@ -7397,20 +7397,57 @@ main .container .main__header p {
 }
 
 .pueChart .container .pueChart__title button {
+  margin: 6% 0 0 0;
   float: right;
-  margin: 8% 0 0 0;
-  padding: 4% 9%;
+  width: 130px;
+  height: 40px;
+  background: #cee4ee;
   border-radius: 5px;
-  background: #4276d7;
+  position: relative;
+  display: inline-block;
   font-size: calc(12.8px + 3.2 * ((100vw - 320px) / 1030));
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: 1;
 }
 
 .pueChart .container .pueChart__title button a {
-  color: #d6dfdf;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.pueChart .container .pueChart__title button a:visited {
-  color: #d6dfdf;
+.pueChart .container .pueChart__title button:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #4276d7;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.26);
+          box-shadow: 0px 5px 29px 2px rgba(34, 60, 80, 0.26);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.pueChart .container .pueChart__title button:hover:after {
+  left: 0;
+  width: 100%;
 }
 
 .opportunities {
@@ -7706,13 +7743,24 @@ footer .footer__item a {
           transition-delay: 1.15s;
 }
 
-.content__item picture {
+article picture {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 @media (max-width: 1200px) {

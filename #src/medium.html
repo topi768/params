@@ -99,8 +99,9 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 2</h2>
-            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
-            <p class="task__formula">(2a - 4)x = 3a + 1</p>
+            <small><a href="#"> Уравнение с модулем</a></small>
+            <p class="task__text">Найдите все значения а, при каждом из которых уравнение имеет единственный корень. </p>
+            <p class="task__formula">$$x^2 + (a - 3)^2 = | x + 3 - a | | x + a - 3 |$$</p>
           </div>
           <div class="task__animation" >
             <div class="checkbox">
@@ -118,7 +119,34 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+
+              $$  \textnormal {если}   \; x_0   \textnormal{является корнем исходного уравнения, то и}  $$
+              $$   \; -x_0 \;  \textnormal{является его корнем. Значит,}$$
+              $$ \textnormal{исходное уравнение имеет единственный корень,} $$
+              $$\textnormal{только если }  x_0 = -x_0 \textnormal{ то есть }  x_0 = 0  \textnormal{ Подставим }$$
+              $$ \textnormal{значение x = 0 в исходное уравнение:}  $$
+              $$ (a - 3)^2 = | 3 - a | + | a - 3 | $$
+              $$ | a - 3 | (| a - 3 | - 2)  = 0$$
+              $$ | a - 3 | (| a - 3 | - 2)  = 0$$
+              $$ \textnormal{откуда либо |a − 3| = 0 ⇔ a = 3,}$$
+              $$ \textnormal{либо |a − 3| = 2 ⇔ a = 1, или a = 5.} $$
+              $$ \textnormal{При a = 3 исходное уравнение принимает вид: }$$
+              $$ x^2 = 2|x| \textnormal{Корнями этого уравнения являются числа}$$
+              $$ −2; 0, 2, $$
+              $$ \textnormal{то есть исходное уравнение имеет более одного корня. } $$
+              $$ \textnormal{При a = 1 и при a = 5 уравнение принимает вид: } $$
+              $$ x^2 + 4 = | x - 2 | + | x  + 2 | $$
+              $$ \textnormal{При x < − 2 это уравнение сводится к уравнению:} $$
+              $$ x^2 + 2x + 4 = 0 \textnormal{, которое не имеет корней}$$
+              $$ \textnormal{При  −2 ≤ x ≤ 2 получаем уравнение} x^2 = 0 $$
+              $$ \textnormal{имеющее 1 корень}  $$
+              $$ \textnormal{При > 2 получаем уравнение } x^2 - 2x + 4 = 0 $$
+              $$ \textnormal{которое не имеет корней. При a = 1 и при a = 5} $$
+              $$\textnormal{исходное уравнение имеет единственный корень.} $$
+
+
+            </p>
           </div>
         </div>
       </section>

@@ -247,6 +247,8 @@ main {
   }
 }
 footer {
+
+  padding: 2% 0;
   min-height: 10vh;
   width: 100%;
   display: flex;
@@ -257,6 +259,7 @@ footer {
   @include adaptiv-font(14);
   .footer__item {
      white-space: nowrap;
+     text-align: center;
     h4 {
       font-family: Mulish;
       font-style: normal;

@@ -7365,6 +7365,7 @@ main .container .main__header p {
 }
 
 footer {
+  padding: 2% 0;
   min-height: 10vh;
   width: 100%;
   display: -webkit-box;
@@ -7383,6 +7384,7 @@ footer {
 
 footer .footer__item {
   white-space: nowrap;
+  text-align: center;
 }
 
 footer .footer__item h4 {

@@ -40,8 +40,9 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 1</h2>
-            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
-            <p class="task__formula">(2a - 4)x = 3a + 1</p>
+            <small><a href="#">модули</a></small>
+            <p class="task__text">Найдите все значения параметра a, при каждом из которых уравнение имеет корни, но ни один из них не принадлежит интервалу (4; 19).</p>
+            <p class="task__formula">$$ | x - a^2 + a + 2 | + | x - a^2 + 3a - 1 | = 2a - 3$$</p>
           </div>
           <div class="task__animation">
             <div class="checkbox" >
@@ -59,7 +60,74 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              <!-- \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are -->
+              <p>Разность выражений, стоящих под знаками модуля, совпадает с правой частью уравнения:</p>
+              $$  ( x - a^2 + a + 2 ) - ( x - a^2 + 3a - 1 ) = 2a - 3 $$
+              <p>Сделаем замену:</p>
+              $$ m = x - a^2 + 3a - 1 $$
+              $$ n = x - a^2 + a + 2 $$
+              <p>Тогда уравнение имеет вид:</p>
+              $$ | m | + | n | = m - n $$
+              <p>Это равносильно условию \(n\leqslant0\leqslant m\). Получаем</p>
+              $$  x - a^2 + a + 2 \leq 0 \leq m = x - a^2 + 3a - 1 $$
+              $$  a^2 - 3a + 1 \leq x \leq a^2 - a - 2 $$
+              <p>Уравнение имеет корни, ни один из которых не принадлежит интервалу (4; 19) , только если правая граница отрезка решений не больше 4 или левая граница не меньше 19. Получаем</p>
+              $$
+              \begin{equation*}
+                 \begin{cases}
+                   a^2 - 3a + 1 \leq a^2 - a - 2 \\
+                   \left[
+                    \begin{array}{ccc}
+                       a^2 - a - 2 \leq 4 \\
+                       a^2 - 3a + 1 \leq 19 \\
+                    \end{array}
+                  \right.
+                 \end{cases}
+                \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+                 \begin{cases}
+                  2a \geq  3\\
+                   \left[
+                    \begin{array}{ccc}
+                       a^2 - a - 6 \leq 0 \\
+                       a^2 - 3a -18 \geq 0 \\
+                    \end{array}
+                  \right.
+                 \end{cases}
+                \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+                 \begin{cases}
+                  a \geq  1.5\\
+                   \left[
+                    \begin{array}{ccc}
+                      (a - 3)( a + 3 ) \leq 0 \\
+                      (a - 6)( a + 3 ) \geq 0 \\
+                    \end{array}
+                  \right.
+                 \end{cases}
+                \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+                 \begin{cases}
+                  a \geq  1.5\\
+                   \left[
+                    \begin{array}{ccc}
+                      a \leq -3 \\
+                      -2 \leq a \leq 3 \\
+                      a \geq 6 \\
+                    \end{array}
+                  \right.
+                 \end{cases}
+                \end{equation*}
+              $$
+              <p>Ответ: \( a \in  [1, 5; 3] \cup [6; + \infty] \)</p>
+            </p>
           </div>
         </div>
       </section>

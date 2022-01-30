@@ -34,13 +34,22 @@ for(var i = 0; i < input.length; i++) {
       thisAnswer.classList.toggle('answer--open');
       //
       function formulaDerivationSolution() {
-        containerWidth = document.querySelector(".task__container").offsetWidth;
+        containerWidth = document.querySelector(".task__container").offsetWidth - 10 ;
         elements = thisTask.querySelectorAll(".MJX-TEX");
         function elementsWidth() {
           for (let element of elements) {
             // console.log(element.offsetWidth);
-            if ( element.offsetWidth >  containerWidth) {
-              element.style.fontSize = "10px";
+            var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+            var fontSize = parseFloat(style);
+            // let fontSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+            //
+            // for (let i = element.offsetWidth  - containerWidth; element.offsetWidth >  containerWidth; i--) {
+            //   // alert(i);
+            //   element.style.fontSize = (fontSize - 1) + 'px';
+            //
+            // }
+            if (element.offsetWidth >  containerWidth) {
+              element.style.fontSize = '2.5vw';
             }
           }
         }

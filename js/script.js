@@ -31,6 +31,55 @@ for(var i = 0; i < input.length; i++) {
     input[i].addEventListener('click', function(){
       let thisTask = this.parentNode.parentNode.parentNode.parentNode;
       let thisAnswer = thisTask.querySelector('.answer');
-      thisAnswer.classList.toggle('answer--open')
+      thisAnswer.classList.toggle('answer--open');
+      //
+      function formulaDerivationSolution() {
+        containerWidth = document.querySelector(".task__container").offsetWidth - 10 ;
+        elements = thisTask.querySelectorAll(".MJX-TEX");
+        function elementsWidth() {
+          for (let element of elements) {
+            // console.log(element.offsetWidth);
+            var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+            var fontSize = parseFloat(style);
+            // let fontSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
+            //
+            // for (let i = element.offsetWidth  - containerWidth; element.offsetWidth >  containerWidth; i--) {
+            //   // alert(i);
+            //   element.style.fontSize = (fontSize - 1) + 'px';
+            //
+            // }
+            if (element.offsetWidth >  containerWidth) {
+              element.style.fontSize = '2.5vw';
+            }
+          }
+        }
+        elementsWidth()
+      }
+      //
+      formulaDerivationSolution()
     }, false);
+    //
+
 }
+//
+// MathJax = {
+//   chtml: {
+//     scale: 1,                      // global scaling factor for all expressions
+//     minScale: .5,                  // smallest scaling factor to use
+//     mtextInheritFont: true,       // true to make mtext elements use surrounding font
+//     merrorInheritFont: false,      // true to make merror text use surrounding font
+//     mtextFont: '',                 // font to use for mtext, if not inheriting (empty means use MathJax fonts)
+//     merrorFont: 'serif',           // font to use for merror, if not inheriting (empty means use MathJax fonts)
+//     unknownFamily: 'serif',        // font to use for character that aren't in MathJax's fonts
+//     mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
+//     skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
+//     exFactor: .5,                  // default size of ex in em units
+//     displayAlign: 'center',        // default for indentalign when set to 'auto'
+//     displayIndent: '0'             // default for indentshift when set to 'auto'
+//   }
+// };
+//
+
+//
+// let abc = document.querySelector('.MathJax')
+// console.log(abc);

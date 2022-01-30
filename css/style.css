@@ -7080,6 +7080,7 @@ div {
 html,
 body {
   max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -7527,6 +7528,10 @@ footer .footer__item a {
   color: #869094;
 }
 
+.formula {
+  max-width: 100vw;
+}
+
 .task {
   background: #fafafa;
   min-height: 250px;
@@ -7557,15 +7562,6 @@ footer .footer__item a {
   bottom: 0;
   color: #737B7D;
   font-size: calc(10.4px + 2.6 * ((100vw - 320px) / 1030));
-}
-
-.task .task__container .task__formula {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .task .task__container .task__animation {

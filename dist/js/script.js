@@ -34,10 +34,17 @@ for(var i = 0; i < input.length; i++) {
       thisAnswer.classList.toggle('answer--open');
       //
       function formulaDerivationSolution() {
-        formula = thisAnswer.querySelector("mjx-math");
-        console.log(formula.offsetWidth);
-        // for(var i = 0; i < formula.length; i++) {
-        //     };
+        containerWidth = document.querySelector(".task__container").offsetWidth;
+        elements = thisTask.querySelectorAll(".MJX-TEX");
+        function elementsWidth() {
+          for (let element of elements) {
+            // console.log(element.offsetWidth);
+            if ( element.offsetWidth >  containerWidth) {
+              element.style.fontSize = "10px";
+            }
+          }
+        }
+        elementsWidth()
       }
       //
       formulaDerivationSolution()

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>лёгкие</title>
+    <title>теория</title>
     <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <!-- ico -->
@@ -11,31 +11,12 @@
     <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
     <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
     <link rel="manifest" href="ico\site.webmanifest">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
   </head>
   <body id="body">
-    <div id="preloaderOverlay" class="preloader--overlay">
-      <div class="preloader"></div>
-    </div>
-    <nav>
-      <div class="nav--mobile" >
-        <div class="nav__content" id="nav__content">
-          <div class="container">
-            <a class="logo" href="index.html">a</a>
-            <a class="nav__item" href="index.html">Главная</a>
-            <a class="nav__item " href="easy.html">легкие</a>
-            <a class="nav__item" href="medium.html">средние</a>
-            <a class="nav__item" href="hard.html">сложные</a>
-            <a class="nav__item nav__item__hover" href="theoreticalMaterial.html">теория</a>
-
-            <!-- <a class="nav__item" href="easy.html">о нас</a> -->
-            <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
-          </div>
-        </div>
-        <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
-          <span></span>
-        </a>
-      </div>
+    @@include('blockNavAndLoader.html')
     </nav>
     <section class="content">
       <div class="container">
@@ -95,12 +76,7 @@
         </article>
       </div>
     </section>
-      <footer>
-        <div class="footer__item">
-          <h4>Разработка и дизайн сайта:</h4>
-          <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
-        </div>
-      </footer>
+      @@include('blockFooter.html')
     <script src="js\script.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>

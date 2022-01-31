@@ -61,25 +61,16 @@ for(var i = 0; i < input.length; i++) {
     //
 
 }
-//
-// MathJax = {
-//   chtml: {
-//     scale: 1,                      // global scaling factor for all expressions
-//     minScale: .5,                  // smallest scaling factor to use
-//     mtextInheritFont: true,       // true to make mtext elements use surrounding font
-//     merrorInheritFont: false,      // true to make merror text use surrounding font
-//     mtextFont: '',                 // font to use for mtext, if not inheriting (empty means use MathJax fonts)
-//     merrorFont: 'serif',           // font to use for merror, if not inheriting (empty means use MathJax fonts)
-//     unknownFamily: 'serif',        // font to use for character that aren't in MathJax's fonts
-//     mathmlSpacing: false,          // true for MathML spacing rules, false for TeX rules
-//     skipAttributes: {},            // RFDa and other attributes NOT to copy to the output
-//     exFactor: .5,                  // default size of ex in em units
-//     displayAlign: 'center',        // default for indentalign when set to 'auto'
-//     displayIndent: '0'             // default for indentshift when set to 'auto'
-//   }
-// };
-//
+// hover page
+function hoverPage() {
+  let title = document.getElementsByTagName("title")[0].innerHTML;
+  let nav__items = document.querySelectorAll('.nav__item');
+  for (let nav__item of nav__items) {
+    if (nav__item.innerHTML == title) {
+      nav__item.classList.add('nav__item__hover');
+    }
+  }
 
-//
-// let abc = document.querySelector('.MathJax')
-// console.log(abc);
+  // console.log(test);
+}
+ hoverPage()

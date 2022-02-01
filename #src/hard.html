@@ -118,10 +118,11 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 2</h2>
-            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
-            <p class="task__formula">(2a - 4)x = 3a + 1</p>
+            <small><a href="#">модули</a></small>
+            <p class="task__text">Найдите все значения a, при каждом из которых уравнение на промежутке \( (-1; +\infty) \) имеет больше двух корней.</p>
+            <p class="task__formula">$$ \left| \frac{5}{x-1} - 3 \right| = ax + a - 2 $$</p>
           </div>
-          <div class="task__animation" >
+          <div class="task__animation">
             <div class="checkbox">
               <input type="checkbox" class="checkbox__input" id="2" name="checkbox" value="yes">
               <label for="2"  class="checkbox__label">Решение</label>
@@ -137,7 +138,22 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              <p>Рассмотрим функции \( f(x) = ax + a - 2 \) и \( g(x) = \left| \frac{5}{x-1} - 3 \right| \). Исследуем уравнение \( f(x) = g(x) \) на промежутке\(  (-1; +\infty) \)</p>
+              <p>При \( a \leq 0 \) все значения функции \( f(x) \) на промежутке \(  (-1; +\infty) \)  отрицательны, а все значения функции \( g(x) \)  - неотрицательны, поэтому при \( a  \leq 0  \)  уравнение  \( f(x) = g(x) \) е имеет решений на промежутке  \(  (-1; +\infty) \)</p>
+              <p>При > 0 При   \( f(x) \)  возрастает. Функция \( g(x) \) убывает на промежутке  \( \left( -1; \frac{2}{3} \right] \), поэтому уравнение \( f(x) = g(x) \) имеет не более одного решения на промежутке \( \left( -1; \frac{2}{3} \right] \), причем решение будет существовать тогда и только тогда, когда \( f(\frac{2}{3}) 	\geq g(\frac{2}{3}) \),откуда получаем  \( a \cdot \frac{5}{3} \geq 0 \), то есть  \( a \geq \frac{6}{5} \).    </p>
+              <p>На промежутке  \( (\frac{2}{3}; +\infty) \) уравнение   \( f(x) = g(x) \)   принимает вид   \( ax + a - 2 = 3 - \frac{5}{x-1} \). Будем считать, что a > 0, поскольку случай  \( a \leq 0 \) был рассмотрен ранее. Дискриминант квадратного уравнения D = 25 - 20a, поэтому при  \( a > \frac{5}{4} \) это уравнения не имеет корней, при  \( a = \frac{5}{4} \)  уравнения имеет единственный корень, равный  1, при  \( 0 < a , \frac{5}{4} \), уравнение имеет два корня. </p>
+              <p>Если уравнение имеет два корня  \( x_1  \) и \( x_2  \), то есть  \( 0 < a , \frac{5}{4} \),  то больший корень \( x_2 = \frac{5 -2a + \sqrt{D}}{2a} > \frac{5 - 2a}{2a} > 1   > \frac{2}{3} \), поэтому он принадлежит промежутку  \( \frac{2}{3}; +\infty \).Меньший корень  \( x_1 \) принадлежит промежутку  \( {\frac{2}{3}; \infty}  \)  тогда и только тогда, когда   </p>
+              $$  f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = \frac{25a - 30}{9} > 0  \Leftrightarrow a > \frac{6}{5}.$$
+              <!-- $$  f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = $$
+              $$ =\frac{25a - 30}{9} > 0  \Leftrightarrow a > \frac{6}{5}.$$ -->
+              <p>Таким образом, исходное уравнение  \(  \left| \frac{5}{x-1} - 3 \right| = ax + a - 2 \) имеет следующее количество корней на промежутке  \( -1; +\infty \): </p>
+              <p>-  нет корней при  \( a \leq 0  \) </p>
+              <p>- 1 корень при   \(0 < a < \frac{6}{5} \) и при \( a >  \frac{5}{4} \) </p>
+              <p>- 2 корня при \( a = \frac{6}{5}  \) и при \( a = \frac{5}{4} \) </p>
+              <p>- 3 корня при \( \frac{6}{5} < a < \frac{5}{4} \) </p>
+              <p>Ответ: \( \frac{6}{5} < a < \frac{5}{4} \))  </p>
+            </p>
           </div>
         </div>
       </section>
@@ -164,7 +180,9 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
           </div>
         </div>
       </section>

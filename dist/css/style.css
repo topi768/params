@@ -7367,6 +7367,14 @@ main .container .main__header p {
           transform: translate(0, -17%);
 }
 
+.difficulty .container .difficulty__item a {
+  color: #737B7D;
+}
+
+.difficulty .container .difficulty__item a:hover {
+  color: #4276d7;
+}
+
 .pueChart {
   width: 100%;
 }
@@ -7526,6 +7534,13 @@ footer .footer__item p {
 footer .footer__item a {
   margin: 0 3%;
   color: #869094;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer__item a:hover {
+  color: #d6dfdf;
 }
 
 .formula {
@@ -7562,6 +7577,13 @@ footer .footer__item a {
   bottom: 0;
   color: #737B7D;
   font-size: calc(10.4px + 2.6 * ((100vw - 320px) / 1030));
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .task__container small a:hover {
+  color: #4276d7;
 }
 
 .task .task__container .task__animation {

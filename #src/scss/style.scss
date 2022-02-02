@@ -244,6 +244,12 @@ main {
           transform: translate(0, -17%);
         }
       }
+      a {
+        color: $grey;
+      }
+      a:hover {
+        color: $blue
+      }
     }
   }
 }
@@ -383,6 +389,10 @@ footer {
     a {
       margin: 0 3%;
       color: $whiteGrey;
+      transition: 0.5s;
+      &:hover {
+        color: $white;
+      }
     }
   }
 }
@@ -390,5 +400,4 @@ footer {
 @import 'burger';
 @import 'difficulties';
 @import "theoreticalMaterial";
-
 //

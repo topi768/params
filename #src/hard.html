@@ -161,8 +161,9 @@
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 3</h2>
-            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
-            <p class="task__formula">(2a - 4)x = 3a + 1</p>
+            <small><a href="#">грифический метод</a></small>
+            <p class="task__text">При каких a уравнение имеет ровно три корня?</p>
+            <p class="task__formula">$$ | x^2 - 2x - 3 | -2a = | x - a | - 1 $$</p>
           </div>
           <div class="task__animation" >
             <div class="checkbox">
@@ -181,7 +182,16 @@
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <p>Запишем уравнение в виде \(  | x^2 - 2x - 3 | = | x - a | + 2a - 1\). </p>
+              <p>Построим графики левой и правой частей уравнения  \( f(x) =  | x^2 - 2x - 3 | \) и  \( | x - a | + 2a- 1 \).Первая из них парабола с отраженной отрицательной частью, а вторая график модуля с вершиной в точке  \( (a; 2a - 1) \)    </p>
+              <img src="img\hard\3\yotx.ru.png" alt="">
+              <p>Ясно, что вершина второго графика перемещается в зависимости от a по прямой  \( y = 2x - 1  \).Из рисунка видно, что подходящих значений a ровно два — при одном из них график правой части проходит через точку  \( (-1; 0) \) при другом — касается отраженного участка параболы.  </p>
+              <p>Первое происходит при a = 0, а второе — когда уравнение</p>
+              $$ 3 + 2x - x^2 = 3a - 1 - x \Leftrightarrow $$
+              $$ \Leftrightarrow x^2 - 3x + 3a - 4 = 0 $$
+              <p>имеет единственный корень, то есть в случае, когда дискриминант равен нулю.</p>
+              $$ D = 3^2 - 4(3a - 4) = 25 - 12a = 0 \Leftrightarrow a = \frac{25}{12}$$
+              <p>Ответ: \( a = 0, a = \frac{25}{12}\) </p>
             </p>
           </div>
         </div>

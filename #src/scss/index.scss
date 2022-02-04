@@ -148,6 +148,53 @@ main {
     }
   }
 }
+.phone {
+
+  height: 100vh;
+ .container {
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items:  center;
+    .phone__container {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items:  center;
+      .phone__item1 {
+        z-index: 3
+      }
+      .phone__item2 {
+        z-index: 2
+      }
+      .phone__item3 {
+        z-index: 1
+      }
+      .phone__item {
+        transition: 380ms;
+
+        position: absolute;
+        // top: 50%;
+        // top: 0;
+        // left: 0;
+        max-width: 500px;
+        max-height: 700px;
+      }
+      &:hover{
+        .phone__item1 {
+          transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+        }
+        .phone__item2 {
+          transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+        }
+        .phone__item3 {
+          transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+        }
+      }
+
+    }
+  }
+}
 .opportunities{
   padding: 5% 0;
   width: 100%;
@@ -182,6 +229,7 @@ main {
     }
   }
 }
+
 footer {
 
   padding: 2% 0;

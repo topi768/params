@@ -7459,6 +7459,75 @@ main .container .main__header p {
   width: 100%;
 }
 
+.phone {
+  height: 100vh;
+}
+
+.phone .container {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .container .phone__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone .container .phone__container .phone__item1 {
+  z-index: 3;
+}
+
+.phone .container .phone__container .phone__item2 {
+  z-index: 2;
+}
+
+.phone .container .phone__container .phone__item3 {
+  z-index: 1;
+}
+
+.phone .container .phone__container .phone__item {
+  -webkit-transition: 380ms;
+  -o-transition: 380ms;
+  transition: 380ms;
+  position: absolute;
+  max-width: 500px;
+  max-height: 700px;
+}
+
+.phone .container .phone__container:hover .phone__item1 {
+  -webkit-transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+          transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+}
+
+.phone .container .phone__container:hover .phone__item2 {
+  -webkit-transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+          transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+}
+
+.phone .container .phone__container:hover .phone__item3 {
+  -webkit-transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+          transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+}
+
 .opportunities {
   padding: 5% 0;
   width: 100%;

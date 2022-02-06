@@ -74,3 +74,11 @@ function hoverPage() {
   // console.log(test);
 }
  hoverPage()
+// animation in phone
+// function functionName() {
+//   block = document.querySelector(".block")
+//   while (document.documentElement.clientWidth < block.getBoundingClientRect().width) {
+//   block.style.transform = 'rotate(' + 1 + 'deg)';
+//   }
+// }
+// functionName()

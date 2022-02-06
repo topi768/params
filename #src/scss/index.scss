@@ -149,23 +149,28 @@ main {
   }
 }
 .phone {
-
   height: 100vh;
-  h2 {
-    text-align: center;
+  padding: 0 0 0 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  @media(max-width: 1400px) {
+    flex-direction: column;
+    padding: 0;
+    .phone__container {
+      right: 0;
+    }
   }
- .container {
-   padding: 5% 0 0 0;
-   display: flex;
-   justify-content: center;
-   align-items:  center;
+  h2 {
+    display: block;
+    max-width: 300px;
+  }
+ // .container {
     .phone__container {
       width: 280px;
       height: 570px;
       position: relative;
-      // display: flex;
-      // justify-content: center;
-      // align-items:  center;
+      right: 27vw;
       .phone__item1 {
         z-index: 3
       }
@@ -221,10 +226,8 @@ main {
       }
 
 
-
-
     }
-  }
+  // }
 }
 
 .opportunities{

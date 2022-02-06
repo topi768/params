@@ -148,6 +148,88 @@ main {
     }
   }
 }
+.phone {
+  height: 100vh;
+  padding: 0 0 0 13%;
+  display: flex;
+  justify-content: space-between;
+  align-items:  center;
+  @media(max-width: 1400px) {
+    flex-direction: column;
+    padding: 0;
+    .phone__container {
+      right: 0;
+    }
+  }
+  h2 {
+    display: block;
+    max-width: 300px;
+  }
+ // .container {
+    .phone__container {
+      width: 280px;
+      height: 570px;
+      position: relative;
+      right: 27vw;
+      .phone__item1 {
+        z-index: 3
+      }
+      .phone__item2 {
+        z-index: 2
+      }
+      .phone__item3 {
+        z-index: 1
+      }
+      .phone__item {
+        transition: 380ms;
+
+        position: absolute;
+        height: auto;
+        // width: 16vw;
+        // min-width: 280px;
+        width: 280px;
+        height: 570px;
+      }
+      &:hover{
+        .phone__item1 {
+          transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+        }
+        .phone__item2 {
+          transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+        }
+        .phone__item3 {
+          transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+        }
+        @media(max-width: 780px){
+          .phone__item1 {
+            transform: translate(0, -44%) rotate(18deg) skew(-16deg);
+          }
+          .phone__item2 {
+            transform: translate(0, -22%) rotate(18deg) skew(-16deg);
+          }
+          .phone__item3 {
+            transform: translate(0, 0%) rotate(18deg) skew(-16deg);
+          }
+          @media(max-width: 600px){
+            .phone__item1 {
+              transform: translate(0, -44%) rotate(6deg) skew(-4deg);
+            }
+            .phone__item2 {
+              transform: translate(0, -22%) rotate(6deg) skew(-4deg);
+            }
+            .phone__item3 {
+              transform: translate(0, 0%) rotate(6deg) skew(-4deg);
+            }
+          }
+
+        }
+      }
+
+
+    }
+  // }
+}
+
 .opportunities{
   padding: 5% 0;
   width: 100%;
@@ -182,6 +264,7 @@ main {
     }
   }
 }
+
 footer {
 
   padding: 2% 0;

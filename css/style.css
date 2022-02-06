@@ -7101,6 +7101,10 @@ li * {
   color: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -7118,6 +7122,8 @@ h1 {
 
 h2 {
   font-size: calc(22.4px + 5.6 * ((100vw - 320px) / 1030));
+  color: #373F41;
+  line-height: 2.5rem;
 }
 
 h3 {
@@ -7367,6 +7373,14 @@ main .container .main__header p {
           transform: translate(0, -17%);
 }
 
+.difficulty .container .difficulty__item a {
+  color: #737B7D;
+}
+
+.difficulty .container .difficulty__item a:hover {
+  color: #4276d7;
+}
+
 .pueChart {
   width: 100%;
 }
@@ -7451,6 +7465,72 @@ main .container .main__header p {
   width: 100%;
 }
 
+.phone {
+  height: 100vh;
+  padding: 0 0 0 13%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phone h2 {
+  display: block;
+  max-width: 300px;
+}
+
+.phone .phone__container {
+  width: 280px;
+  height: 570px;
+  position: relative;
+  right: 27vw;
+}
+
+.phone .phone__container .phone__item1 {
+  z-index: 3;
+}
+
+.phone .phone__container .phone__item2 {
+  z-index: 2;
+}
+
+.phone .phone__container .phone__item3 {
+  z-index: 1;
+}
+
+.phone .phone__container .phone__item {
+  -webkit-transition: 380ms;
+  -o-transition: 380ms;
+  transition: 380ms;
+  position: absolute;
+  height: auto;
+  width: 280px;
+  height: 570px;
+}
+
+.phone .phone__container:hover .phone__item1 {
+  -webkit-transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+          transform: translate(0, -44%) rotate(28deg) skew(-26deg);
+}
+
+.phone .phone__container:hover .phone__item2 {
+  -webkit-transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+          transform: translate(0, -22%) rotate(28deg) skew(-26deg);
+}
+
+.phone .phone__container:hover .phone__item3 {
+  -webkit-transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+      -ms-transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+          transform: translate(0, 0%) rotate(28deg) skew(-26deg);
+}
+
 .opportunities {
   padding: 5% 0;
   width: 100%;
@@ -7526,6 +7606,13 @@ footer .footer__item p {
 footer .footer__item a {
   margin: 0 3%;
   color: #869094;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer__item a:hover {
+  color: #d6dfdf;
 }
 
 .formula {
@@ -7562,6 +7649,13 @@ footer .footer__item a {
   bottom: 0;
   color: #737B7D;
   font-size: calc(10.4px + 2.6 * ((100vw - 320px) / 1030));
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.task .task__container small a:hover {
+  color: #4276d7;
 }
 
 .task .task__container .task__animation {
@@ -7761,6 +7855,20 @@ article h6 {
   text-align: center;
 }
 
+@media (max-width: 1400px) {
+  .phone {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+
+  .phone .phone__container {
+    right: 0;
+  }
+}
+
 @media (max-width: 1200px) {
   .difficulty .container {
     -webkit-box-orient: vertical;
@@ -7801,6 +7909,46 @@ article h6 {
 
   .pueChart .container .pueChart__title {
     max-width: 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .phone .phone__container:hover .phone__item1 {
+    -webkit-transform: translate(0, -44%) rotate(18deg) skew(-16deg);
+        -ms-transform: translate(0, -44%) rotate(18deg) skew(-16deg);
+            transform: translate(0, -44%) rotate(18deg) skew(-16deg);
+  }
+
+  .phone .phone__container:hover .phone__item2 {
+    -webkit-transform: translate(0, -22%) rotate(18deg) skew(-16deg);
+        -ms-transform: translate(0, -22%) rotate(18deg) skew(-16deg);
+            transform: translate(0, -22%) rotate(18deg) skew(-16deg);
+  }
+
+  .phone .phone__container:hover .phone__item3 {
+    -webkit-transform: translate(0, 0%) rotate(18deg) skew(-16deg);
+        -ms-transform: translate(0, 0%) rotate(18deg) skew(-16deg);
+            transform: translate(0, 0%) rotate(18deg) skew(-16deg);
+  }
+}
+
+@media (max-width: 780px) and (max-width: 600px) {
+  .phone .phone__container:hover .phone__item1 {
+    -webkit-transform: translate(0, -44%) rotate(6deg) skew(-4deg);
+        -ms-transform: translate(0, -44%) rotate(6deg) skew(-4deg);
+            transform: translate(0, -44%) rotate(6deg) skew(-4deg);
+  }
+
+  .phone .phone__container:hover .phone__item2 {
+    -webkit-transform: translate(0, -22%) rotate(6deg) skew(-4deg);
+        -ms-transform: translate(0, -22%) rotate(6deg) skew(-4deg);
+            transform: translate(0, -22%) rotate(6deg) skew(-4deg);
+  }
+
+  .phone .phone__container:hover .phone__item3 {
+    -webkit-transform: translate(0, 0%) rotate(6deg) skew(-4deg);
+        -ms-transform: translate(0, 0%) rotate(6deg) skew(-4deg);
+            transform: translate(0, 0%) rotate(6deg) skew(-4deg);
   }
 }
 

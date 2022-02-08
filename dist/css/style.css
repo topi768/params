@@ -7835,13 +7835,14 @@ footer .footer__item a:hover {
           transition-delay: 1.15s;
 }
 
-article picture {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+article {
+  margin-top: 7%;
+}
+
+article img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 article h1,
@@ -7850,9 +7851,17 @@ article h3,
 article h4,
 article h5,
 article h6 {
-  display: block;
-  width: 100%;
   text-align: center;
+  line-height: 2rem;
+}
+
+article a {
+  color: #737B7D;
+  font-size: calc(12.8px + 3.2 * ((100vw - 320px) / 1030));
+}
+
+article a:hover {
+  color: #4276d7;
 }
 
 @media (max-width: 1400px) {

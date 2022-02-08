@@ -1,11 +1,22 @@
 article {
-  picture {
-    display: flex;
-    justify-content: center;
+  margin-top: 7%;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
-    display: block;
-    width: 100%;
+    // display: block;
     text-align: center;
+    line-height: 2rem;
   }
+  a {
+    // float: right;
+    color: $grey;
+    @include adaptiv-font(16);
+    &:hover {
+      color: $blue;
+    }
+  }
+
 }

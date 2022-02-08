@@ -19,7 +19,8 @@
   </head>
   <body id="body">
     @@include('blockNavAndLoader.html')
-      <section class="task">
+    <section class="content">
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 1</h2>
@@ -58,63 +59,63 @@
               <p>Уравнение имеет корни, ни один из которых не принадлежит интервалу (4; 19) , только если правая граница отрезка решений не больше 4 или левая граница не меньше 19. Получаем</p>
               $$
               \begin{equation*}
-                 \begin{cases}
-                   a^2 - 3a + 1 \leq a^2 - a - 2 \\
-                   \left[
-                    \begin{array}{ccc}
-                       a^2 - a - 2 \leq 4 \\
-                       a^2 - 3a + 1 \leq 19 \\
-                    \end{array}
-                  \right.
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a^2 - 3a + 1 \leq a^2 - a - 2 \\
+              \left[
+              \begin{array}{ccc}
+              a^2 - a - 2 \leq 4 \\
+              a^2 - 3a + 1 \leq 19 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
               $$
               $$
               \begin{equation*}
-                 \begin{cases}
-                  2a \geq  3\\
-                   \left[
-                    \begin{array}{ccc}
-                       a^2 - a - 6 \leq 0 \\
-                       a^2 - 3a -18 \geq 0 \\
-                    \end{array}
-                  \right.
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              2a \geq  3\\
+              \left[
+              \begin{array}{ccc}
+              a^2 - a - 6 \leq 0 \\
+              a^2 - 3a -18 \geq 0 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
               $$
               $$
               \begin{equation*}
-                 \begin{cases}
-                  a \geq  1.5\\
-                   \left[
-                    \begin{array}{ccc}
-                      (a - 3)( a + 3 ) \leq 0 \\
-                      (a - 6)( a + 3 ) \geq 0 \\
-                    \end{array}
-                  \right.
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a \geq  1.5\\
+              \left[
+              \begin{array}{ccc}
+              (a - 3)( a + 3 ) \leq 0 \\
+              (a - 6)( a + 3 ) \geq 0 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
               $$
               $$
               \begin{equation*}
-                 \begin{cases}
-                  a \geq  1.5\\
-                   \left[
-                    \begin{array}{ccc}
-                      a \leq -3 \\
-                      -2 \leq a \leq 3 \\
-                      a \geq 6 \\
-                    \end{array}
-                  \right.
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a \geq  1.5\\
+              \left[
+              \begin{array}{ccc}
+              a \leq -3 \\
+              -2 \leq a \leq 3 \\
+              a \geq 6 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
               $$
               <p>Ответ: \( a \in  [1, 5; 3] \cup [6; + \infty] \)</p>
             </p>
           </div>
         </div>
-      </section>
-      <section class="task">
+      </article>
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 2</h2>
@@ -156,8 +157,8 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="task">
+      </article>
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 3</h2>
@@ -195,7 +196,9 @@
             </p>
           </div>
         </div>
-      </section>
+      </article>
+
+    </section>
       @@include('blockFooter.html')
 
 

@@ -7619,18 +7619,18 @@ footer .footer__item a:hover {
   max-width: 100vw;
 }
 
-.task {
+.content {
   background: #fafafa;
   min-height: 250px;
 }
 
-.task .checkbox__line {
+.content .checkbox__line {
   position: absolute;
   display: block;
   background: #4276d7;
 }
 
-.task .task__container {
+.content .task__container {
   border-radius: 15px;
   position: relative;
   padding: 7%;
@@ -7638,11 +7638,11 @@ footer .footer__item a:hover {
   height: 100%;
 }
 
-.task .task__container h2 {
+.content .task__container h2 {
   text-align: center;
 }
 
-.task .task__container small a {
+.content .task__container small a {
   display: block;
   position: absolute;
   left: 10%;
@@ -7654,28 +7654,28 @@ footer .footer__item a:hover {
   transition: 0.5s;
 }
 
-.task .task__container small a:hover {
+.content .task__container small a:hover {
   color: #4276d7;
 }
 
-.task .task__container .task__animation {
+.content .task__container .task__animation {
   position: absolute;
   right: 10%;
   bottom: 0%;
 }
 
-.task .task__container .task__animation .checkbox {
+.content .task__container .task__animation .checkbox {
   position: relative;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__input {
+.content .task__container .task__animation .checkbox .checkbox__input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   position: absolute;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__label {
+.content .task__container .task__animation .checkbox .checkbox__label {
   position: relative;
   padding: 15px 30px;
   -webkit-user-select: none;
@@ -7689,14 +7689,14 @@ footer .footer__item a:hover {
   transition: 0.3s;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__line--top-left {
+.content .task__container .task__animation .checkbox .checkbox__line--top-left {
   top: 0;
   left: 50%;
   width: 0%;
   height: 2px;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-left {
+.content .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-left {
   width: 50%;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -7706,7 +7706,7 @@ footer .footer__item a:hover {
           transition-delay: 0.25s;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__line--top-right {
+.content .task__container .task__animation .checkbox .checkbox__line--top-right {
   top: 0;
   left: 50%;
   width: 0%;
@@ -7719,7 +7719,7 @@ footer .footer__item a:hover {
           transform: rotate(180deg);
 }
 
-.task .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-right {
+.content .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--top-right {
   width: 50%;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -7729,14 +7729,14 @@ footer .footer__item a:hover {
           transition-delay: 0.25s;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__line--right {
+.content .task__container .task__animation .checkbox .checkbox__line--right {
   top: 0;
   right: 0;
   width: 2px;
   height: 0%;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--right {
+.content .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--right {
   height: 100%;
   -webkit-transition: 0.45s;
   -o-transition: 0.45s;
@@ -7746,14 +7746,14 @@ footer .footer__item a:hover {
           transition-delay: 0.75s;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__line--left {
+.content .task__container .task__animation .checkbox .checkbox__line--left {
   top: 0;
   left: 0;
   width: 2px;
   height: 0%;
 }
 
-.task .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--left {
+.content .task__container .task__animation .checkbox .checkbox__input:checked + .checkbox__label ~ .checkbox__line--left {
   height: 100%;
   -webkit-transition: 0.45s;
   -o-transition: 0.45s;
@@ -7763,7 +7763,7 @@ footer .footer__item a:hover {
           transition-delay: 0.75s;
 }
 
-.task .answer {
+.content .answer {
   padding: 5% 10%;
   height: 0;
   opacity: 0;
@@ -7772,8 +7772,8 @@ footer .footer__item a:hover {
   top: -10000%;
 }
 
-.task .answer picture,
-.task .answer img {
+.content .answer picture,
+.content .answer img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7783,7 +7783,7 @@ footer .footer__item a:hover {
   max-width: 100%;
 }
 
-.task .answer .answer__line--top-right {
+.content .answer .answer__line--top-right {
   top: 0;
   right: 10%;
   width: 0%;
@@ -7796,14 +7796,14 @@ footer .footer__item a:hover {
           transform-origin: right;
 }
 
-.task .answer .answer__line--top-left {
+.content .answer .answer__line--top-left {
   top: 0;
   right: calc(9.8% + 127.37px);
   width: 0%;
   height: 2px;
 }
 
-.task .answer--open {
+.content .answer--open {
   position: relative;
   height: auto;
   opacity: 1;
@@ -7815,7 +7815,7 @@ footer .footer__item a:hover {
           transition-delay: 1.25s;
 }
 
-.task .answer--open .answer__line--top-right {
+.content .answer--open .answer__line--top-right {
   width: 5%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -7825,7 +7825,7 @@ footer .footer__item a:hover {
           transition-delay: 1.15s;
 }
 
-.task .answer--open .answer__line--top-left {
+.content .answer--open .answer__line--top-left {
   width: calc(95% - (9.8% + 127.37px));
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;

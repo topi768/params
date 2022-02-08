@@ -16,7 +16,8 @@
   </head>
   <body id="body">
     @@include('blockNavAndLoader.html')
-      <section class="task">
+    <section class="content" >
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 1</h2>
@@ -54,8 +55,8 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="task">
+      </article>
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 2</h2>
@@ -91,33 +92,33 @@
               <p>раскладываем знаменатель</p>
               $$ a^2 + 2a -3 = 0 $$
               $$\begin{equation*}
-                 \begin{cases}
-                   a_1 + a_2 = -2
-                   \\
-                   a_1 * a_2 = -3
-                   \\
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a_1 + a_2 = -2
+              \\
+              a_1 * a_2 = -3
+              \\
+              \end{cases}
+              \end{equation*}
               $$
               $$\begin{equation*}
-                 \begin{cases}
-                   a_1 = 1
-                   \\
-                    a_2 = -3
-                   \\
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a_1 = 1
+              \\
+              a_2 = -3
+              \\
+              \end{cases}
+              \end{equation*}
               $$
               $$ a^2 + 2a -3 = (x - 1)(x + 3)  $$
               $$ x =  \frac{(a - 1)^2}{(x - 1)(x + 3)}$$
               $$ x =  \frac{(a - 1)}{(x + 3)}$$
-                $$Ответ: если \: a = 1, то \: x \in R;$$
-                $$ если \:a \neq 1, \: x =  \frac{(a - 1)}{(x + 3)} $$
+              $$Ответ: если \: a = 1, то \: x \in R;$$
+              $$ если \:a \neq 1, \: x =  \frac{(a - 1)}{(x + 3)} $$
             </p>
           </div>
         </div>
-      </section>
-      <section class="task">
+      </article>
+      <article class="task">
         <div class="task__container">
           <div class="task__item">
             <h2>Задание 3</h2>
@@ -149,20 +150,21 @@
               $$D = a^2 - 64 > 0 $$
               $$D = a^2  > 64 $$
               $$\begin{equation*}
-                 \begin{cases}
-                  a \geq 8
-                   \\
-                   a < -8
-                   \\
-                 \end{cases}
-                \end{equation*}
+              \begin{cases}
+              a \geq 8
+              \\
+              a < -8
+              \\
+              \end{cases}
+              \end{equation*}
               $$
               <p>Ответ:  уравнение умеет  2  корня   при</p>
               $$   \:  a \in (-\infty ; -8 ) \cup ( 8; +\infty)  $$
             </p>
           </div>
         </div>
-      </section>
+      </article>
+    </section>
       @@include('blockFooter.html')
     <script src="js\script.min.js"></script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

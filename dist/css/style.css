@@ -7835,32 +7835,33 @@ footer .footer__item a:hover {
           transition-delay: 1.15s;
 }
 
-article {
-  margin-top: 7%;
+.theoretical {
+  background: #fafafa;
 }
 
-article img {
+.theoretical__item h1,
+.theoretical__item h2,
+.theoretical__item h3,
+.theoretical__item h4,
+.theoretical__item h5,
+.theoretical__item h6 {
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+.theoretical__item img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
 
-article h1,
-article h2,
-article h3,
-article h4,
-article h5,
-article h6 {
-  text-align: center;
-  line-height: 2rem;
-}
-
-article a {
+.theoretical__item a {
   color: #737B7D;
   font-size: calc(12.8px + 3.2 * ((100vw - 320px) / 1030));
 }
 
-article a:hover {
+.theoretical__item a:hover {
   color: #4276d7;
 }
 

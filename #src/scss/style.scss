@@ -23,6 +23,7 @@ $grey: #737B7D;
 $white:  #d6dfdf;
 $whiteGrey: #869094;
 $disabledBtn : #cee4ee;
+$backround: #fafafa;
 //
 @mixin adaptiv-font($pcSize) {
  $mobSize: $fontCompressionRatio * $pcSize;

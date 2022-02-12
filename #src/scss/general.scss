@@ -130,3 +130,21 @@ nav {
     color: $blue;
   }
 }
+//
+::-webkit-scrollbar {
+   width: 35px; /* ширина нового скроллбара */
+
+}
+::-webkit-scrollbar-track {
+   background: #f5cdcd; /* цвет фона у дорожки */
+   box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset; /* тень у дорожки */
+}
+::-webkit-scrollbar-thumb {
+   background: #e47e7e; /* цвет фона у дорожки */
+   border-radius: 8px; /* скругление углов */
+   border: 3px solid #f5cdcd; /* толщина, стиль и цвет рамки */
+}
+
+::-webkit-scrollbar-thumb:hover {
+   background: #b91414; /* ползунок меняет цвет при наведении */
+}

@@ -12,13 +12,13 @@
       margin: 0 auto;
       max-width: 100%;
     }
-    a {
-      // float: right;
-      color: $grey;
-      @include adaptiv-font(16);
-      &:hover {
-        color: $blue;
-      }
-    }
+    // a {
+    //   // float: right;
+    //   color: $grey;
+    //   @include adaptiv-font(16);
+    //   &:hover {
+    //     color: $blue;
+    //   }
+    // }
   }
 }

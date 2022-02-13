@@ -67,7 +67,7 @@ p {
 .loaded .preloader {
   display: none;
 }
-////
+// nav
 .container {
   width: 100%;
   height: 100%;
@@ -119,6 +119,53 @@ nav {
   }
   .nav__item__hover {
     color: $blue;
+  }
+}
+// footer
+.content {
+  // position: relative;
+  display: table;
+
+}
+// чинит белый пиксель в футере
+.MJX_HoverRegion, .MJX_ToolTip {
+  background: $black !important;
+}
+//
+footer {
+
+  display: table-row;
+  //
+  margin-bottom: -4%;
+  min-height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $black;
+  color: $whiteGrey;
+  @include adaptiv-font(14);
+
+  .footer__item {
+     white-space: nowrap;
+     text-align: center;
+    h4 {
+      font-family: Mulish;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 16px;
+    }
+    p {
+      @include adaptiv-font(12);
+    }
+    a {
+      margin: 0 3%;
+      color: $whiteGrey;
+      transition: 0.5s;
+      &:hover {
+        color: $white;
+      }
+    }
   }
 }
 //

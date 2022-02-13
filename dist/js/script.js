@@ -10,16 +10,12 @@
 document.body.onload = function () {
 
   setTimeout(function() {
-    // document.getElementById("body").classList.toggle('lock');
     var preloaderOverlay = document.getElementById('preloaderOverlay');
     if ( !preloaderOverlay.classList.contains('done') )
     {
-      preloaderOverlay.classList.add('done');
-      document.getElementById("body")remove("lock");
-      // document.getElementById("body").classList.toggle('lock');
+      preloaderOverlay.classList.add('lock');
     }
-
-  },200);
+  },500);
 }
 //
 function burger() {

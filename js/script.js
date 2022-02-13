@@ -13,7 +13,7 @@ document.body.onload = function () {
     var preloaderOverlay = document.getElementById('preloaderOverlay');
     if ( !preloaderOverlay.classList.contains('done') )
     {
-      preloaderOverlay.classList.add('lock');
+      preloaderOverlay.classList.add('done');
     }
   },500);
 }

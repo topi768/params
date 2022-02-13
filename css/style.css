@@ -1,5 +1,3 @@
-@charset "UTF-8";
-
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap");
 
 /*!
@@ -7355,33 +7353,6 @@ footer .footer__item a:hover {
 
 .source:hover {
   color: #4276d7;
-}
-
-::-webkit-scrollbar {
-  width: 35px;
-  /* ширина нового скроллбара */
-}
-
-::-webkit-scrollbar-track {
-  background: #f5cdcd;
-  /* цвет фона у дорожки */
-  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
-          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
-  /* тень у дорожки */
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e47e7e;
-  /* цвет фона у дорожки */
-  border-radius: 8px;
-  /* скругление углов */
-  border: 3px solid #f5cdcd;
-  /* толщина, стиль и цвет рамки */
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #b91414;
-  /* ползунок меняет цвет при наведении */
 }
 
 main {

@@ -15,9 +15,16 @@ document.body.onload = function () {
     if ( !preloaderOverlay.classList.contains('done') )
     {
       preloaderOverlay.classList.add('done');
+<<<<<<< HEAD
       // document.getElementById("body").remove("lock");
       document.getElementById("body").classList.toggle('lock');
     }
+=======
+      document.getElementById("body")remove("lock");
+      // document.getElementById("body").classList.toggle('lock');
+    }
+
+>>>>>>> minorImprovements
   },200);
 }
 //

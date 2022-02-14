@@ -18,7 +18,6 @@ document.body.onload = function () {
       document.getElementById("body")remove("lock");
       // document.getElementById("body").classList.toggle('lock');
     }
-
   },200);
 }
 //

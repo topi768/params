@@ -54,11 +54,21 @@ main {
         }
       }
       img {
-        width: 40px;
-        height: 40px;
         transition: 0.4s;
 
-      }
+        }
+        .difficulty__item1 {
+          width: 40px;
+          height: 40px;
+        }
+        .difficulty__item2 {
+          width: 50px;
+          height: 50px;
+        }
+        .difficulty__item3 {
+          width: 60px;
+          height: 60px;
+        }
       &:hover {
         img {
           transform: translate(0, -17%);

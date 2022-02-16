@@ -1,21 +1,10 @@
-//preloader
-// window.onload = function () {
-//   document.body.classList.add('loaded_hiding');
-//   window.setTimeout(function () {
-//     document.body.classList.add('loaded');
-//     document.body.classList.remove('loaded_hiding');
-//
-//   }, 500);
-// }
-document.body.onload = function () {
 
+document.body.onload = function () {
   setTimeout(function() {
-    // document.getElementById("body").classList.toggle('lock');
     var preloaderOverlay = document.getElementById('preloaderOverlay');
     if ( !preloaderOverlay.classList.contains('done') )
     {
       preloaderOverlay.classList.add('done');
-      // document.getElementById("body")remove("lock");
       document.getElementById("body").classList.toggle('lock');
     }
 
@@ -36,22 +25,16 @@ for(var i = 0; i < input.length; i++) {
       let thisTask = this.parentNode.parentNode.parentNode.parentNode;
       let thisAnswer = thisTask.querySelector('.answer');
       thisAnswer.classList.toggle('answer--open');
-      //
+
       function formulaDerivationSolution() {
         containerWidth = document.querySelector(".task__container").offsetWidth - 10 ;
         elements = thisTask.querySelectorAll(".MJX-TEX");
+
         function elementsWidth() {
           for (let element of elements) {
-            // console.log(element.offsetWidth);
             var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
             var fontSize = parseFloat(style);
-            // let fontSize = window.getComputedStyle(element, null).getPropertyValue('font-size');
-            //
-            // for (let i = element.offsetWidth  - containerWidth; element.offsetWidth >  containerWidth; i--) {
-            //   // alert(i);
-            //   element.style.fontSize = (fontSize - 1) + 'px';
-            //
-            // }
+
             if (element.offsetWidth >  containerWidth) {
               element.style.fontSize = '2.5vw';
             }
@@ -59,11 +42,8 @@ for(var i = 0; i < input.length; i++) {
         }
         elementsWidth()
       }
-      //
       formulaDerivationSolution()
     }, false);
-    //
-
 }
 // hover page
 function hoverPage() {
@@ -74,15 +54,107 @@ function hoverPage() {
       nav__item.classList.add('nav__item__hover');
     }
   }
-
-  // console.log(test);
 }
  hoverPage()
-// animation in phone
-// function functionName() {
-//   block = document.querySelector(".block")
-//   while (document.documentElement.clientWidth < block.getBoundingClientRect().width) {
-//   block.style.transform = 'rotate(' + 1 + 'deg)';
+
+//  // live Data In pie chart
+//  async function getResponce() {
+//   let response  = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=8G_wCk50X0BoByO2Lh6qu9U5p17Ihkw2ANt5_cgS5XUeNFEsVt4nUzH_g1CeAwp3_MDmTeXZx_7fK9F4QWt08BdbOPfj-NaVm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJILmuUkX7-2fRM4sF4_IUXnBAc9lBBneA1xw6kgMkXh12oVKeuCZim_RZkk23jqN5o1I3EUoVlSwZOCS20QW1CxjTSIadW9mQ&lib=MBEHOj-5ApdPpk8Bi09PC0GulHhryzpvX')
+//   let content = await response.json()
+//   let key
+//   for ( key in content) {
+//     let  data0 =   content[key][0][0];
+//     let  data1 =   content[key][0][1];
+//     let  data2 =   content[key][0][2];
+//     // myChart.data.datasets[0].data[0] = data0;
+//     // myChart.data.datasets[0].data[1] = data1;
+//     // myChart.data.datasets[0].data[2] = data2;
+//     if ((data0 !== undefined) && (data1 !== undefined) && (data2 !== undefined))  {
+//
+//     }
+//     console.log(data0);
 //   }
 // }
-// functionName()
+//
+// getResponce()
+
+//
+// fetch('https://script.googleusercontent.com/macros/echo?user_content_key=8G_wCk50X0BoByO2Lh6qu9U5p17Ihkw2ANt5_cgS5XUeNFEsVt4nUzH_g1CeAwp3_MDmTeXZx_7fK9F4QWt08BdbOPfj-NaVm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJILmuUkX7-2fRM4sF4_IUXnBAc9lBBneA1xw6kgMkXh12oVKeuCZim_RZkk23jqN5o1I3EUoVlSwZOCS20QW1CxjTSIadW9mQ&lib=MBEHOj-5ApdPpk8Bi09PC0GulHhryzpvX')
+//   .then(response => response.json())
+//   .then(commits => console.log(commits.result[0]));
+
+
+// console.log(content[key][0][1]);
+//  async function getResponce() {
+//   let response  = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=8G_wCk50X0BoByO2Lh6qu9U5p17Ihkw2ANt5_cgS5XUeNFEsVt4nUzH_g1CeAwp3_MDmTeXZx_7fK9F4QWt08BdbOPfj-NaVm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJILmuUkX7-2fRM4sF4_IUXnBAc9lBBneA1xw6kgMkXh12oVKeuCZim_RZkk23jqN5o1I3EUoVlSwZOCS20QW1CxjTSIadW9mQ&lib=MBEHOj-5ApdPpk8Bi09PC0GulHhryzpvX')
+//   let content = await response.json()
+//   let key
+//   for ( key in content) {
+//     let  data0 =   content[key][0][0];
+//     let  data1 =   content[key][0][1];
+//     let  data2 =   content[key][0][2];
+//     // myChart.data.datasets[0].data[0] = data0;
+//     // myChart.data.datasets[0].data[1] = data1;
+//     // myChart.data.datasets[0].data[2] = data2;
+//     if ((data0 !== undefined) && (data1 !== undefined) && (data2 !== undefined))  {
+//
+//     }
+//     console.log(data0);
+//   }
+// }
+
+// getResponce()
+
+
+
+let pueChart = document.querySelector('#pueChart').getContext('2d');
+pueChart.canvas.parentNode.style.height = '600px';
+pueChart.canvas.parentNode.style.width = '50%';
+
+let myChart = new Chart(pueChart, {
+  type: 'pie',
+  data: {
+    labels: ['да, я собираюсь', 'не буду  их решать','не сдаю профиль'] ,
+    datasets: [{
+      data: [
+        1,
+        1,
+        1
+        // content[key][0][0],
+        // content[key][0][1],
+        // content[key][0][2]
+      ],
+      backgroundColor: [
+        '#6bd95a',
+        '#4276d7',
+        '#cf4d4d',
+      ],
+      // borderColor: [
+      //   '#4d74bd'
+      // ],
+      // borderWidth: 2
+    }]
+  },
+  options: {
+    maintainAspectRatio: false,
+    layout: {
+        padding: {
+            // left: 50
+        }
+    }
+  }
+
+})
+
+(async () => {
+let url = 'https://script.googleusercontent.com/macros/echo?user_content_key=8G_wCk50X0BoByO2Lh6qu9U5p17Ihkw2ANt5_cgS5XUeNFEsVt4nUzH_g1CeAwp3_MDmTeXZx_7fK9F4QWt08BdbOPfj-NaVm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJILmuUkX7-2fRM4sF4_IUXnBAc9lBBneA1xw6kgMkXh12oVKeuCZim_RZkk23jqN5o1I3EUoVlSwZOCS20QW1CxjTSIadW9mQ&lib=MBEHOj-5ApdPpk8Bi09PC0GulHhryzpvX';
+let response = await fetch(url);
+
+let commits = await response.json(); // читаем ответ в формате JSON
+
+console.log(commits.result[0]);
+
+myChart.data.datasets[0].data[0] = commits.result[0][0];
+    myChart.data.datasets[0].data[1] = commits.result[0][1];
+    myChart.data.datasets[0].data[2] = commits.result[0][2];
+})()

@@ -7297,6 +7297,7 @@ nav .nav__item__hover {
 }
 
 footer {
+  margin-top: 7%;
   display: table-row;
   margin-bottom: -4%;
   min-height: 10%;
@@ -7659,7 +7660,6 @@ main .container .main__header p {
 .content {
   height: 100%;
   width: 100%;
-  margin: 0 0 5% 0;
   min-height: 250px;
   background: #fafafa;
 }
@@ -7864,6 +7864,28 @@ main .container .main__header p {
   -webkit-transition-delay: 1.15s;
        -o-transition-delay: 1.15s;
           transition-delay: 1.15s;
+}
+
+.test {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background: #fafafa;
+  height: 10vh;
+}
+
+.test h3 {
+  color: #373F41;
+}
+
+.test a {
+  color: #373F41;
+  font-family: Mulish;
+  font-size: calc(15.2px + 3.8 * ((100vw - 320px) / 1030));
 }
 
 .theoretical {

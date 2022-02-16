@@ -7297,6 +7297,7 @@ nav .nav__item__hover {
 }
 
 footer {
+  margin-top: 7%;
   display: table-row;
   margin-bottom: -4%;
   min-height: 10%;

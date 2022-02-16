@@ -63,12 +63,20 @@ function hoverPage() {
   let content = await response.json()
   let key
   for ( key in content) {
-    // let  data =  content[key][0]
-
+    let  data0 =   content[key][0][0];
+    let  data1 =   content[key][0][1];
+    let  data2 =   content[key][0][2];
+    myChart.data.datasets[0].data[0] = data0;
+    myChart.data.datasets[0].data[1] = data1;
+    myChart.data.datasets[0].data[2] = data2;
+    // if ((data0 !== undefined) && (data1 !== undefined) && (data2 !== undefined))  {
+    //
+    // }
+    console.log(data0);
   }
 
 }
 
-// getResponce()
-console.log(myChart.data.datasets[0].data[0]);
+getResponce()
+// console.log(myChart.data.datasets[0].data[0]);
 //

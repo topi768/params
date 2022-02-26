@@ -19,7 +19,7 @@ main {
   .container {
     display: flex;
     align-items: center;
-    .main__header {
+    .main__title {
       max-width: clamp(400px, 40%, 45%);
       z-index: 10;
       h1 {
@@ -62,12 +62,12 @@ main {
           height: 40px;
         }
         .difficulty__item2 {
-          width: 50px;
-          height: 50px;
+          width: 55px;
+          height: 55px;
         }
         .difficulty__item3 {
-          width: 60px;
-          height: 60px;
+          width: 65px;
+          height: 65px;
         }
       &:hover {
         img {
@@ -160,7 +160,8 @@ main {
   }
 }
 .phone {
-  height: 100vh;
+  margin: 10% 0;
+  height: auto;
   padding: 0 0 0 13%;
   display: flex;
   justify-content: space-between;
@@ -179,7 +180,7 @@ main {
  // .container {
     .phone__container {
       width: 280px;
-      height: 570px;
+      height: 590px;
       position: relative;
       right: 27vw;
       .phone__item1 {
@@ -193,11 +194,8 @@ main {
       }
       .phone__item {
         transition: 380ms;
-
         position: absolute;
         height: auto;
-        // width: 16vw;
-        // min-width: 280px;
         width: 280px;
         height: 570px;
       }

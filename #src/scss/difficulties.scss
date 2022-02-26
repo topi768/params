@@ -8,7 +8,7 @@
   // margin: 0 0 5% 0;
   min-height: 250px;
   background: $backround;
-
+  // padding: 0 0 5% 0;
   .checkbox__line {
     position: absolute;
     display: block;
@@ -155,13 +155,15 @@
   }
 }
 .test {
-  display: flex;
-  justify-content: center;
+  padding: 7%;
+  // display: flex;
+  // justify-content: center;
   // align-items: center;
   text-align: center;
   background: $backround;
   height: 10vh;
-  h3 {
+  p {
+    line-height: 20px;
     // display: block;
     color: $black;
   }

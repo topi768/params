@@ -63,18 +63,18 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>
+            <div class="answer__content">
               <p>Данная функция определена на всей числовой прямой и при
                 любом значении параметра а является кусочно-линейной. Точки</p>
                 $$ -1, -\frac{ 2 } { a }, -\frac{ 5 } { a } $$
                 <p>разбивают числовую прямую на промежутки, на каждом из которых функция
                   является линейной. Рассмотрим случай a < 0. Тогда</p>
                   $$ -1 < -\frac{ 2 } { a } < -\frac{ 5 } { a } $$
-                  <p>. При раскрытие модулей получаем:</p>
-                  $$ если  \ x < -1, то \ y = 9 + 7x - 3ax - 6 + ax + 5 - x  - 1 = (6 - 2a)x + 7$$
-                  $$ если  \ -1 \leq x < -\frac{2}{a} , то \ y = 9 + 7x - 3ax - 6 + ax + 5 + x  + 1 = (8 - 2a)x + 9$$
-                  $$ если  \ -\frac{2}{a} \leq x < -\frac{5}{a} , то \ y = 9 + 7x + 3ax + 6 + ax + 5 + x  + 1 = (8 - 4a)x + 21$$
-                  $$ если  \  x \geq  -\frac{5}{a} , то \ y = 9 + 7x + 3ax + 6 - ax - 5 + x  + 1 = (8 + 2a)x + 11$$
+                  <p>При раскрытие модулей получаем:</p>
+                  <p> если  \( x < -1 \) , то \( y = 9 + 7x - 3ax - 6 + ax + 5 - x  - 1 = (6 - 2a)x + 7 \) </p>
+                  <p> если  \( -1 \leq x < -\frac{2}{a} \), то \( y = 9 + 7x - 3ax - 6 + ax + 5 + x  + 1 = (8 - 2a)x + 9 \)</p>
+                  <p> если  \( -\frac{2}{a} \leq x < -\frac{5}{a} \), то \( y = 9 + 7x + 3ax + 6 + ax + 5 + x  + 1 = (8 - 4a)x + 21 \)</p>
+                  <p> если  \(  x \geq  -\frac{5}{a} \), то \( y = 9 + 7x + 3ax + 6 - ax - 5 + x  + 1 = (8 + 2a)x + 11 \)</p>
                   <p>Для того чтобы функция не убывала, необходимо и достаточно, чтобы все полученные значения угловых коэффициентов прямых были неотрицательными. Следовательно,</p>
                   $$
                   \begin{equation*}
@@ -94,7 +94,7 @@
                   <p>получаем:</p>
                   $$ -2 \leq a < 0 $$
                   <p>Отсюда получаем наименьшее значение параметра, равное -2. Так как по условию задачи нужно найти наименьшее значение а, то случай а > 0 рассматривать не нужно.</p>
-                </p>
+                </div>
                 <a class="source" href="https://math100.ru/prof-ege_2022_17-6/" >источник </a>
               </div>
             </div>
@@ -253,8 +253,7 @@
   </div>
 </section>
 
-
-      <footer>
+    <footer>
   <div class="footer__item">
     <h4>Разработка и дизайн сайта:</h4>
     <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
@@ -264,8 +263,19 @@
   </div>
 </footer>
 
-    <script src="js\script.min.js"></script>
+    <script type="text/javascript">
+    MathJax.Hub.Config({
+  CommonHTML: {
+    linebreaks: {
+      automatic: true
+    }
+  }
+});
+    </script>
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="js\script.min.js"></script>
+
   </body>
 </html>

@@ -28,15 +28,15 @@ for(var i = 0; i < input.length; i++) {
 
       function formulaDerivationSolution() {
         containerWidth = document.querySelector(".task__container").offsetWidth - 10 ;
-        elements = thisTask.querySelectorAll(".MJX-TEX");
+        formulas = thisTask.querySelectorAll("mjx-container");
 
         function elementsWidth() {
-          for (let element of elements) {
-            var style = window.getComputedStyle(element, null).getPropertyValue('font-size');
+          for (let formula of formulas) {
+            var style = window.getComputedStyle(formula, null).getPropertyValue('font-size');
             var fontSize = parseFloat(style);
 
-            if (element.offsetWidth >  containerWidth) {
-              element.style.fontSize = '2.5vw';
+            if (formula.offsetWidth >  containerWidth) {
+              formula.style.fontSize = "calc(10.8px + 3.2 * ((100vw - 320px)/ 1030))";
             }
           }
         }
@@ -56,3 +56,4 @@ function hoverPage() {
   }
 }
  hoverPage()
+ //

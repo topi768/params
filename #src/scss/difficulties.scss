@@ -107,7 +107,6 @@
     height: 0;
     opacity: 0;
     background: #fafafa;
-    // transition: 1s;
     position: absolute;
     top: -10000%;
     picture, img {
@@ -115,11 +114,6 @@
       justify-content: center;
       max-width: 100%;
     }
-    // @media  (max-width: 380px) {
-    //   .answer__container {
-    //     font-size: 13px !important
-    //   }
-    // }
     .answer__line--top-right{
       top: 0;
       right: 10%;
@@ -131,10 +125,16 @@
     .answer__line--top-left{
       top: 0;
       right: calc(9.8% + 127.37px);
-      // transform:  rotate(180deg);
       width: 0%;
       height: 2px;
     }
+    //
+    .answer__content {
+      // width: 300px;
+    }
+
+
+
   }
   .answer--open {
     position:  relative;
@@ -156,20 +156,14 @@
 }
 .test {
   padding: 7%;
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   text-align: center;
   background: $backround;
   height: 10vh;
   p {
     line-height: 20px;
-    // display: block;
     color: $black;
   }
   a {
-    // display: block;
-
     color: $black;
     font-family: Mulish;
     @include adaptiv-font(19);

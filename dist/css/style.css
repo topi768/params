@@ -7176,8 +7176,8 @@ p {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 0.9s cubic-bezier(0, 0.67, 0.88, 0.33) infinite;
-          animation: spin 0.9s cubic-bezier(0, 0.67, 0.88, 0.33) infinite;
+  -webkit-animation: spin 0.3s linear infinite;
+          animation: spin 0.3s linear infinite;
 }
 
 @-webkit-keyframes spin {

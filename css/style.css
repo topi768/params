@@ -7176,8 +7176,8 @@ p {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  -webkit-animation: spin 0.9s cubic-bezier(0, 0.67, 0.88, 0.33) infinite;
-          animation: spin 0.9s cubic-bezier(0, 0.67, 0.88, 0.33) infinite;
+  -webkit-animation: spin 0.3s linear infinite;
+          animation: spin 0.3s linear infinite;
 }
 
 @-webkit-keyframes spin {
@@ -7297,9 +7297,9 @@ nav .nav__item__hover {
 }
 
 footer {
-  margin-top: 7%;
   display: table-row;
   margin-bottom: -4%;
+  padding: 2% 0;
   min-height: 10%;
   width: 100%;
   display: -webkit-box;
@@ -7388,17 +7388,17 @@ main .container {
           align-items: center;
 }
 
-main .container .main__header {
+main .container .main__title {
   max-width: clamp(400px, 40%, 45%);
   z-index: 10;
 }
 
-main .container .main__header h1 {
+main .container .main__title h1 {
   color: #d6dfdf;
   margin: 0 0 4% 0;
 }
 
-main .container .main__header p {
+main .container .main__title p {
   color: #869094;
 }
 
@@ -7442,13 +7442,13 @@ main .container .main__header p {
 }
 
 .difficulty .container .difficulty__item .difficulty__item2 {
-  width: 50px;
-  height: 50px;
+  width: 55px;
+  height: 55px;
 }
 
 .difficulty .container .difficulty__item .difficulty__item3 {
-  width: 60px;
-  height: 60px;
+  width: 65px;
+  height: 65px;
 }
 
 .difficulty .container .difficulty__item:hover img {
@@ -7550,7 +7550,8 @@ main .container .main__header p {
 }
 
 .phone {
-  height: 100vh;
+  margin: 10% 0;
+  height: auto;
   padding: 0 0 0 13%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7570,7 +7571,7 @@ main .container .main__header p {
 
 .phone .phone__container {
   width: 280px;
-  height: 570px;
+  height: 590px;
   position: relative;
   right: 27vw;
 }
@@ -7867,18 +7868,14 @@ main .container .main__header p {
 }
 
 .test {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: 7%;
   text-align: center;
   background: #fafafa;
   height: 10vh;
 }
 
-.test h3 {
+.test p {
+  line-height: 20px;
   color: #373F41;
 }
 
@@ -7886,6 +7883,10 @@ main .container .main__header p {
   color: #373F41;
   font-family: Mulish;
   font-size: calc(15.2px + 3.8 * ((100vw - 320px) / 1030));
+}
+
+mjx-container .parentFontSize {
+  font-size: inherit !important;
 }
 
 .theoretical {

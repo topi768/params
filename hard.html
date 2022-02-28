@@ -66,17 +66,17 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>
+            <div class="answer__content">
               <!-- \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are -->
               <p>Разность выражений, стоящих под знаками модуля, совпадает с правой частью уравнения:</p>
-              $$  ( x - a^2 + a + 2 ) - ( x - a^2 + 3a - 1 ) = 2a - 3 $$
+              <p>$$  ( x - a^2 + a + 2 ) - ( x - a^2 + 3a - 1 ) = 2a - 3 $$</p>
               <p>Сделаем замену:</p>
               $$ m = x - a^2 + 3a - 1 $$
               $$ n = x - a^2 + a + 2 $$
               <p>Тогда уравнение имеет вид:</p>
               $$ | m | + | n | = m - n $$
               <p>Это равносильно условию \(n\leqslant0\leqslant m\). Получаем</p>
-              $$  x - a^2 + a + 2 \leq 0 \leq m = x - a^2 + 3a - 1 $$
+              <p>$$  x - a^2 + a + 2 \leq 0 \leq m = x - a^2 + 3a - 1 $$</p>
               $$  a^2 - 3a + 1 \leq x \leq a^2 - a - 2 $$
               <p>Уравнение имеет корни, ни один из которых не принадлежит интервалу (4; 19) , только если правая граница отрезка решений не больше 4 или левая граница не меньше 19. Получаем</p>
               $$
@@ -133,7 +133,7 @@
               \end{equation*}
               $$
               <p>Ответ: \( a \in  [1, 5; 3] \cup [6; + \infty] \)</p>
-            </p>
+            </div>
             <a class="source" href="https://ege.sdamgia.ru/problem?id=507587">источник</a>
           </div>
         </div>
@@ -148,8 +148,8 @@
           </div>
           <div class="task__animation">
             <div class="checkbox">
-              <input type="checkbox" class="checkbox__input" id="2" name="checkbox" value="yes">
-              <label for="2"  class="checkbox__label">Решение</label>
+              <input  onclick="formulaDerivationSolution()" type="checkbox" id="2" class="checkbox__input" name="checkbox" value="yes">
+              <label for="2" class="checkbox__label">Решение</label>
               <span class="checkbox__line checkbox__line--top-left"></span>
               <span class="checkbox__line checkbox__line--top-right"></span>
               <span class="checkbox__line checkbox__line--right"></span>
@@ -162,13 +162,14 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>
+            <div class="answer__content">
               <p>Рассмотрим функции \( f(x) = ax + a - 2 \) и \( g(x) = \left| \frac{5}{x-1} - 3 \right| \). Исследуем уравнение \( f(x) = g(x) \) на промежутке\(  (-1; +\infty) \)</p>
               <p>При \( a \leq 0 \) все значения функции \( f(x) \) на промежутке \(  (-1; +\infty) \)  отрицательны, а все значения функции \( g(x) \)  - неотрицательны, поэтому при \( a  \leq 0  \)  уравнение  \( f(x) = g(x) \) е имеет решений на промежутке  \(  (-1; +\infty) \)</p>
               <p>При > 0 При   \( f(x) \)  возрастает. Функция \( g(x) \) убывает на промежутке  \( \left( -1; \frac{2}{3} \right] \), поэтому уравнение \( f(x) = g(x) \) имеет не более одного решения на промежутке \( \left( -1; \frac{2}{3} \right] \), причем решение будет существовать тогда и только тогда, когда \( f(\frac{2}{3}) 	\geq g(\frac{2}{3}) \),откуда получаем  \( a \cdot \frac{5}{3} \geq 0 \), то есть  \( a \geq \frac{6}{5} \).    </p>
               <p>На промежутке  \( (\frac{2}{3}; +\infty) \) уравнение   \( f(x) = g(x) \)   принимает вид   \( ax + a - 2 = 3 - \frac{5}{x-1} \). Будем считать, что a > 0, поскольку случай  \( a \leq 0 \) был рассмотрен ранее. Дискриминант квадратного уравнения D = 25 - 20a, поэтому при  \( a > \frac{5}{4} \) это уравнения не имеет корней, при  \( a = \frac{5}{4} \)  уравнения имеет единственный корень, равный  1, при  \( 0 < a , \frac{5}{4} \), уравнение имеет два корня. </p>
               <p>Если уравнение имеет два корня  \( x_1  \) и \( x_2  \), то есть  \( 0 < a , \frac{5}{4} \),  то больший корень \( x_2 = \frac{5 -2a + \sqrt{D}}{2a} > \frac{5 - 2a}{2a} > 1   > \frac{2}{3} \), поэтому он принадлежит промежутку  \( \frac{2}{3}; +\infty \).Меньший корень  \( x_1 \) принадлежит промежутку  \( {\frac{2}{3}; \infty}  \)  тогда и только тогда, когда   </p>
-              $$  f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = \frac{25a - 30}{9} > 0  \Leftrightarrow a > \frac{6}{5}.$$
+              <p> $$ f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = \frac{25a - 30}{9} > 0 $$ </p>
+              <p> $$\Leftrightarrow a > \frac{6}{5}$$.</p>
               <!-- $$  f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = $$
               $$ =\frac{25a - 30}{9} > 0  \Leftrightarrow a > \frac{6}{5}.$$ -->
               <p>Таким образом, исходное уравнение  \(  \left| \frac{5}{x-1} - 3 \right| = ax + a - 2 \) имеет следующее количество корней на промежутке  \( -1; +\infty \): </p>
@@ -177,7 +178,7 @@
               <p>- 2 корня при \( a = \frac{6}{5}  \) и при \( a = \frac{5}{4} \) </p>
               <p>- 3 корня при \( \frac{6}{5} < a < \frac{5}{4} \) </p>
               <p>Ответ: \( \frac{6}{5} < a < \frac{5}{4} \))  </p>
-            </p>
+            </div>
             <a class="source" href="https://ege.sdamgia.ru/problem?id=501070" >источник</a>
           </div>
         </div>
@@ -206,7 +207,7 @@
           <div class="answer__container">
             <span class="checkbox__line answer__line--top-left"></span>
             <span class="checkbox__line answer__line--top-right"></span>
-            <p>
+            <div class="answer__content">
               <p>Запишем уравнение в виде \(  | x^2 - 2x - 3 | = | x - a | + 2a - 1\). </p>
               <p>Построим графики левой и правой частей уравнения  \( f(x) =  | x^2 - 2x - 3 | \) и  \( | x - a | + 2a- 1 \).Первая из них парабола с отраженной отрицательной частью, а вторая график модуля с вершиной в точке  \( (a; 2a - 1) \)    </p>
               <img src="img\hard\3\yotx.ru.png" alt="">
@@ -217,7 +218,7 @@
               <p>имеет единственный корень, то есть в случае, когда дискриминант равен нулю.</p>
               $$ D = 3^2 - 4(3a - 4) = 25 - 12a = 0 \Leftrightarrow a = \frac{25}{12}$$
               <p>Ответ: \( a = 0, a = \frac{25}{12}\) </p>
-            </p>
+            </div>
             <a class="source" href="https://ege.sdamgia.ru/problem?id=485982" >источник</a>
           </div>
         </div>
@@ -226,7 +227,7 @@
     </section>
       <section class="test">
   <div class="container">
-    <h3>Уже подготовились? Пройдите по теме <a class="source" href="https://forms.gle/1Rdxr952r9zHCxWH7">тест</a></h3>
+    <p>Уже подготовились? Пройдите по теме <a class="source" href="https://forms.gle/1Rdxr952r9zHCxWH7">тест</a></p>
   </div>
 </section>
 

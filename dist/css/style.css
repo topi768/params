@@ -7885,6 +7885,10 @@ main .container .main__title p {
   font-size: calc(15.2px + 3.8 * ((100vw - 320px) / 1030));
 }
 
+mjx-container .parentFontSize {
+  font-size: inherit !important;
+}
+
 .theoretical {
   background: #fafafa;
 }

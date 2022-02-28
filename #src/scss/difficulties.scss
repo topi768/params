@@ -132,9 +132,6 @@
     .answer__content {
       // width: 300px;
     }
-
-
-
   }
   .answer--open {
     position:  relative;
@@ -168,4 +165,8 @@
     font-family: Mulish;
     @include adaptiv-font(19);
   }
+}
+//
+mjx-container .parentFontSize {
+  font-size: inherit !important;
 }

@@ -62,7 +62,7 @@
     <div class="container">
       <div class="pueChart__title">
         <h2>Ответ на вопрос "будете ли вы решать задание с параметром на ЕГЭ?" </h2>
-        <small>примите участие в опросе, чтобы получить более точные данные (данные на сайт заполняются в ручную)</small>
+        <small>примите участие в опросе, чтобы получить более точные данные</small>
         <button><a target="_blank" href="https://forms.gle/XyqhhxicYVq76vRs7">опрос</a> </button>
       </div>
       <div class="pueChart__pueChar">
@@ -101,47 +101,41 @@
       </div>
     </div>
   </section>
-  @@include('blockFooter.html')
+    @@include('blockFooter.html')
+    <script src="js\script.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script  >
-      let pueChart = document.querySelector('#pueChart').getContext('2d');
-      pueChart.canvas.parentNode.style.height = '600px';
-      pueChart.canvas.parentNode.style.width = '50%';
-      let myChart = new Chart(pueChart, {
-        type: 'pie',
-        data: {
-          labels: ['да, я собираюсь', 'не буду  их решать','не сдаю профиль'] ,
-          datasets: [{
-            data: [
-              8,
-              1,
-              1
-              // content[key][0][0],
-              // content[key][0][1],
-              // content[key][0][2]
-            ],
-            backgroundColor: [
-              '#6bd95a',
-              '#4276d7',
-              '#cf4d4d',
-            ],
-            // borderColor: [
-            //   '#4d74bd'
-            // ],
-            // borderWidth: 2
-          }]
-        },
-        options: {
-          maintainAspectRatio: false,
-          layout: {
-              padding: {
-                  // left: 50
-              }
+    <script async type="text/javascript">
+      //// получение информации из json
+      async function getUsers() {
+        let response = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=8p8em6kzYdZv9vvmXu7nqWvf-G2dm00DsIrgiZoLryLgUwI2RIxQ40a1So25fRa7jlFFv9r7yOx4qKyO0AYRtcewS4s5bYWIm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJILmuUkX7-2fRM4sF4_IUXnBAc9lBBneA1xw6kgMkXh12oVKeuCZim_RZkk23jqN5o1I3EUoVlSwZOCS20QW1CxjTSIadW9mQ&lib=MBEHOj-5ApdPpk8Bi09PC0GulHhryzpvX');
+        let resultAnswers = await response.json();
+        ////pueChart
+        let pueChart = document.querySelector('#pueChart').getContext('2d');
+        pueChart.canvas.parentNode.style.height = '600px';
+        pueChart.canvas.parentNode.style.width = '50%';
+        let myChart = new Chart(pueChart, {
+          type: 'pie',
+          data: {
+            labels: ['да, я собираюсь', 'не буду  их решать','не сдаю профиль'] ,
+            datasets: [{
+              data: [
+                resultAnswers.result[0][0],
+                resultAnswers.result[0][1],
+                resultAnswers.result[0][2],
+              ],
+              backgroundColor: [
+                '#6bd95a',
+                '#4276d7',
+                '#cf4d4d',
+              ],
+            }]
+          },
+          options: {
+            maintainAspectRatio: false,
           }
-        }
-
-      })
+        })
+      }
+      getUsers()
     </script>
-    <script  src="js\script.min.js"></script>
   </body>
 </html>

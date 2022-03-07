@@ -1,11 +1,11 @@
 
 document.body.onload = function () {
   setTimeout(function() {
-    var preloaderOverlay = document.getElementById('preloaderOverlay');
-    if ( !preloaderOverlay.classList.contains('done') )
+    let preloaderOverlay = document.getElementById('preloaderOverlay');
+    if ( !preloaderOverlay.classList.('done') )
     {
       preloaderOverlay.classList.add('done');
-      document.getElementById("body").classList.toggle('lock');
+      document.getElementById("body").classList.remove('lock');
     }
 
   },500);
@@ -20,7 +20,7 @@ function burger() {
 //
 
 let input = document.querySelectorAll('input');
-for(var i = 0; i < input.length; i++) {
+for(let i = 0; i < input.length; i++) {
     input[i].addEventListener('click', function(){
       let thisTask = this.parentNode.parentNode.parentNode.parentNode;
       let thisAnswer = thisTask.querySelector('.answer');

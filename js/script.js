@@ -2,13 +2,11 @@
 document.body.onload = function () {
   setTimeout(function() {
     let preloaderOverlay = document.getElementById('preloaderOverlay');
-    if ( !preloaderOverlay.classList.('done') )
-    {
+    if ( !preloaderOverlay.classList.contains('done') ) {
       preloaderOverlay.classList.add('done');
       document.getElementById("body").classList.remove('lock');
     }
-
-  },500);
+  },300);
 }
 //
 function burger() {
@@ -25,8 +23,6 @@ for(let i = 0; i < input.length; i++) {
       let thisTask = this.parentNode.parentNode.parentNode.parentNode;
       let thisAnswer = thisTask.querySelector('.answer');
       thisAnswer.classList.toggle('answer--open');
-
-
       formulaDerivationSolution()
     }, false);
 }

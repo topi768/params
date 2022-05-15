@@ -7,36 +7,233 @@
   font-style: #{$style};
   }
 }
-//
 @import "fonts";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito+Sans&display=swap');
 @import "scss/fontawesome.scss";
 @import "scss/solid.scss";
 
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Nunito Sans' ;
+}
+div {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  // height: 100vh;
+  max-width: 100%;
+  // overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+li {
+ list-style-type: none;
+ * {
+   color:  inherit;
+ }
+}
 //
-$maxWidth: 1350;//рекомендованая ширина экрана
-$fontCompressionRatio: 0.8;//коэффицент сжатия шрифта
-//
-$blue: #4276d7;
-$black: #373F41;
-$grey: #737B7D;
-$white:  #d6dfdf;
-$whiteGrey: #869094;
-$disabledBtn : #cee4ee;
-$backround: #fafafa;
-//
+$maxWidth: 1350;
 @mixin adaptiv-font($pcSize) {
- $mobSize: $fontCompressionRatio * $pcSize;
+ $mobSize: 0.6 * $pcSize;
  $addSize: $pcSize - $mobSize;
  $maxWidth: $maxWidth - 320;
  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
 }
-
 //
-@import "null";
-@import 'general';
-@import 'burger';
-//pages
-@import "index";
-@import 'difficulties';
-@import "theoreticalMaterial";
+html {
+  height: 100%;
+
+}
+//
+body {
+  height: 100%;
+
+}
+
+///
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--index: calc(1vw + 1vh);
+	--gutter: 30px;
+	--side-small: 26;
+	--side-big: 36;
+	--depth: 4400px;
+	--transition: .75s cubic-bezier(.075, .5, 0, 1)
+}
+
+/* Скрываем Scrollbar */
+body {
+	scrollbar-width: none; /* Firefox */
+}
+body::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+@font-face {
+	font-family: raleway_c;
+	src: url(../fonts/raleway-v22-cyrillic-300.woff2);
+	font-weight: 300;
+}
+@font-face {
+	font-family: raleway_c;
+	src: url(../fonts/raleway-v22-cyrillic-100.woff2);
+	font-weight: 100;
+}
+body {
+	background-color: #000;
+	color: #fff;
+	font-size: calc(var(--index) * .8);
+	font-family: raleway_c, sans-serif;
+	line-height: 1.75;
+	height: var(--depth);
+	font-weight: 300;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	perspective: 1500px;
+}
+.gallery {
+	transform-style: preserve-3d;
+	height: 100%;
+}
+.frame {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: var(--transition), opacity .75s ease;
+	will-change: transform;
+	transform-style: preserve-3d;
+}
+h1, h2, h3, h4 {
+	font-weight: 100;
+	text-transform: uppercase;
+	width: min-content;
+	line-height: 1;
+}
+.frame h2 {
+	text-align: center;
+	font-size: calc(var(--index) * 3.3);
+}
+.frame-media {
+	position: relative;
+	width: calc(var(--index) * var(--side-small));
+	height: calc(var(--index) * var(--side-big));
+	background-position: center;
+	background-size: cover;
+}
+.frame-media_left {
+	right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+.frame-media_right {
+	left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+}
+.frame_bg {
+	background-color: rgb(0 0 0 / .87);
+}
+video.frame-media {
+	width: calc(var(--index) * var(--side-big));
+	height: calc(var(--index) * var(--side-small));
+}
+video.frame-media_right {
+	left: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+video.frame-media_left {
+	right: calc(var(--side-big) / 2 * var(--index) + var(--gutter));
+}
+.text-right > * {
+	position: relative;
+	left: 18vw;
+}
+.text-left > * {
+	position: relative;
+	right: 18vw;
+}
+.frame h3 {
+	font-size: calc(var(--index) * 3);
+}
+.frame p {
+	max-width: 30vw;
+	margin-top: 3vh;
+}
+.soundbutton {
+	position: fixed;
+	bottom: 5vh;
+	right: 5vw;
+	cursor: pointer;
+	width: 24px;
+	transition: .25s ease;
+}
+.soundbutton.paused {
+	opacity: .25;
+}
+//
+.frame__ellips {
+  display: flex;
+  align-items: center;
+
+  .frame__ellipse1 {
+    margin: 0 3px 0 0;
+    // left: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  }
+  .frame__ellipse2 {
+    margin: 0 3px 0 0;
+
+    // right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  }
+}
+.ellipse {
+  width: 500px;
+  height: 700px;
+  background: #d0ca72 ;
+  border-radius: 50%;
+}
+.frame__duck {
+  width: 200px;
+  height: 230px;
+  left: 520%;
+  transform:  rotate(18deg);
+  // width: 200px;
+  @media(max-width: 540px) {
+      left: 250%;
+  }
+}
+.frame__plunger {
+  transform: rotate(-20deg);
+  height: 380px;
+  width: 200px;
+  left: -120% ;
+  @media(max-width: 540px) {
+      left: -50%;
+  }
+}
+.frame__banana {
+  width: 350px;
+  height: 250px;
+  left: 100%;
+  transform: rotate(-27deg);
+  @media(max-width: 540px) {
+      left: 5%;
+  }
+}
+.frame__video {
+  opacity: 0.8;
+}

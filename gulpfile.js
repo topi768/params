@@ -210,6 +210,10 @@ function fontsStyle() {
 
 function cb() {}
 
+function video() {
+    return gulp.src([source_folder + '/video/*'])
+    .pipe(gulp.dest('dist/video'));
+}
 
 
   function watchFiles(params) {
@@ -225,12 +229,13 @@ function cb() {}
     return del(path.clean);
   }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, ico, iconsfonts),fontsStyle);
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts, ico,video, iconsfonts),fontsStyle);
 // let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.iconsfonts = iconsfonts;
+exports.video = video;
 exports.ico = ico;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;

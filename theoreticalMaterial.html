@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>теория</title>
+    <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- ico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
+    <link rel="manifest" href="ico\site.webmanifest">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+
+  </head>
+  <body id="body" class="lock">
+    <div id="preloaderOverlay" class="preloader--overlay">
+  <div class="preloader"></div>
+</div>
+<nav>
+  <div class="nav--mobile" >
+    <div class="nav__content" id="nav__content">
+      <div class="container">
+        <a class="logo" href="index.html">a</a>
+        <a class="nav__item " href="index.html">Главная</a>
+        <a class="nav__item" href="easy.html">базовые</a>
+        <a class="nav__item" href="medium.html">повышенные</a>
+        <a class="nav__item" href="hard.html">профильные</a>
+        <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+        <!-- <a class="nav__item" href="#">о нас</a> -->
+        <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
+      </div>
+    </div>
+    <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
+      <span></span>
+    </a>
+  </div>
+</nav>
+
+    </nav>
+    <section class="theoretical">
+      <div class="container">
+        <article class="theoretical__item">
+          <!-- <h2>лёгкие</h2> -->
+          <h3 id="ЛинейныеУравнения">Линейные уравнения</h3>
+          <p>Линейные уравнения, неравенства и системы линейных уравнений относятся к числу самых простых задач с параметрами. Поэтому задачи этого раздела являются подготовительными заданиями к решению реальных задач с параметрами, предлагаемых на ЕГЭ.</p>
+          <a class="source"href="https://math100.ru/prof-ege_2022_17-1/">источник</a>
+        </article>
+        <article class="theoretical__item">
+          <h3 id="ИсследованиеДискриминанта" >Исследование дискриминанта</h3>
+          <p>Решение многих задач с параметрами сводится к исследованию
+            квадратного трехчлена. Для решение некоторых задач этого вида достаточно
+            исследования дискриминанта и применение теоремы Виета.</p>
+            <p>Квадратным трехчленом называется выражение</p>
+            $$ ax^2 + bx + c, a \neq 0 $$
+            <p>если D > 0, то квадратный трёхчлен имеет 2 решения</p>
+            <p>если D = 0, то квадратный трёхчлен имеет 1 решение</p>
+            <p>если D < 0, то квадратный трёхчлен не имеет решение</p>
+            <p>Разложение на множетели:</p>
+            $$ ax^2 + bx + c = a(x - x_1)(x - x_2) $$
+            <p>Теорема Виета:</p>
+            $$ \begin{equation*}
+            \begin{cases}
+            x_1 + x_2 = \frac{-b}{a}
+            \\
+            x_1 * x_2 = \frac{c}{a}
+            \end{cases}
+            \end{equation*}
+            $$
+            <p><strong>Факт 1:</strong> Для того чтобы корни квадратного трехчлена имели
+              одинаковые знаки, необходимо и достаточно выполнения соотношений</p>
+              $$ D = b^2 - 4ac	\geq 0, $$
+              $$ x_1 * x_2 = \frac{c}{a} > 0;$$
+              <p>при этом оба корня положительны, если дополнительно выполняется условие</p>
+              $$ x_1 + x_2 = \frac{c}{a} > 0;$$
+              <p>и оба корня будут отрицательны, если</p>
+              $$ x_1 + x_2 = \frac{c}{a} < 0;$$
+              <p><strong>Факт 2:</strong>Для того чтобы корни квадратного трехчлена имели разные
+                знаки, необходимо и достаточно выполнения соотношения </p>
+                $$ x_1 * x_2 = \frac{c}{a} < 0;$$
+              <a class="source"href="https://math100.ru/prof-ege_2022_17-2/">источник</a>
+        </article>
+        <article class="theoretical__item">
+          <!-- <h2>средние</h2> -->
+          <h3 id="Монотонность">Монотонность</h3>
+          <p><em>Определение</em> 1: Функция называется возрастающей на интервале (a ; b), если большему значению аргумента соответствует большее значение функции, т.е. для любой пары \( x_1, x_2 ∈ (a,b)\) таких, что  \( x_1 > x_2 \) справедливо неравенство  \( f(x_1) > f ( x_2) \). </p>
+          <p><em>Определение</em> 2: Функция называется возрастающей на интервале (a ; b), если большему значению аргумента соответствует меньшее значение функции, т.е. для любой пары \( x_1, x_2 ∈ (a,b)\) таких, что  \( x_1 > x_2 \) справедливо неравенство  \( f(x_1) < f ( x_2) \). </p>
+          <p><em>Определение</em> 3: Функция называется монотонной на интервале, если она на этом интервале или возрастает, или убывает. </p>
+          <p> <em>Необходимые условия возрастания (убывания) функции:</em> если дифференцируемая функция  \( f(x) \) возрастает (убывает) на интервале  \( (a; b) \), то  \( f'(x) \geq 0\) – убывает.</p>
+          <p> <strong>Утверждение 1. </strong> Если функция  \( y = f(x) \) монотонна, то уравнение \( f(x) = A \) (где А – любое действительное число) имеет не более одного корня.</p>
+          <p> <strong>Утверждение 2. </strong> Если функция  возрастает, а функция монотонна возрастает, а функция  \( y = g(x) \) монотонно убывает, то уравнение  \( f(x)= g(x) \) имеет не более одного корня.</p>
+          <p>С помощью утверждений 1 и 2 можно обосновать единственность решения уравнения в тех случаях, когда решить его стандартными способами не представляется возможным, но при этом удается подобрать корень уравнения, который, как правило, является целым числом. При этом надо учитывать, что решение уравнения «методом подбора» не будет засчитано при проверке без обоснования того, что уравнение не имеет других корней. Такое обоснование часто удается сделать, опираясь на свойства монотонности функций.</p>
+
+          <a class="source"href="https://math100.ru/prof-ege_2022_17-6/">источник</a>
+        </article>
+        <article class="theoretical__item">
+          <!-- <h2>сложные</h2> -->
+          <h3 id="ГрафическийМетод" >Графический метод. Решение квадратного уравнения с параметром графическим методом</h3>
+          <p>Пример – найти число корней уравнения в зависимости от параметра а:</p>
+          $$x(x - 1) = a$$
+          <p>Согласно постановке задачи нам не нужно находить значения корней, а только их количество, решаем задачу графическим методом.</p>
+          <p>
+            Первым действием необходимо построить график функции стоящей в левой части: y = x(x - 1). График данной функции нам известен – это парабола, ветви направлены вверх, корни ее легко найти: x<sub>1</sub>, x<sub>2</sub>, отсюда можно найти координаты вершины:
+            $$x_в = \frac{x_1 + x_2}{2} =  \frac{1}{2}$$
+            $$y_в = y\left( \frac{1}{2} \right) =\frac{1}{2}\left( \frac{1}{2} - 1 \right) = -\frac{1}{4}$$
+          </p>
+          <img src="\img\theoreticalMaterial\1\xa.jpg" alt="">
+          <figcaption>$$y = x(x - 1)$$</figcaption>
+          <p>Далее необходимо рассечь график семейством прямых , найти точки пересечения и выписать ответ.</p>
+          <img src="\img\theoreticalMaterial\1\xa2.jpg" alt="">
+          <figcaption>$$y = x(x - 1)$$</figcaption>
+          <p>Глядя на график, выписываем ответ: при a < -0.25 решений нет, при a = -0.25 уравнение имеет единственное решение;
+            при a > -0.25 уравнение имеет два решения.</p>
+          <a class="source"href="https://interneturok.ru/lesson/algebra/11-klass/uravneniya-i-neravenstva-sistemy-uravneniy-i-neravenstv/graficheskiy-metod-v-zadachah-s-parametrom-prodolzhenie-resheniya-zadach">источник</a>
+        </article>
+        <article class="theoretical__item">
+          <h3  id="Модуль" >Модуль</h3>
+          <p> <strong>Пример задачи с модулем: </strong> Найти все значения параметра а, при которых неравенство \( | x^2 - 2x + a | > 5 \) не имеет решений на отрезке [-1;2]</p>
+          <p>Тогда  \(
+             \begin{equation*}
+                 \begin{cases}
+                   x^2 - 2x + a \leq 5  \\
+                   x^2 - 2x + a ≥ 5
+                 \end{cases}
+                \end{equation*}
+                \)
+          </p>
+          <p> $$
+             \begin{equation*}
+                 \begin{cases}
+                   x^2 - 2x + a  - 5 \leq 0  \\
+                   x^2 - 2x + a + 5≥ 0
+                 \end{cases}
+                \end{equation*}
+                $$
+          </p>
+          <p>Ситуация существенно упрощается тем, что минимум функции в обоих неравенствах в точке х=1, т.е. попадает на рассматриваемый отрезок. </p>
+          <p>Тогда первое неравенство будет выполнено на этом отрезке если  \(
+              \begin{equation*}
+                \begin{cases}
+                  f(-1) \leq 0  \\
+                  f(2) \leq 0
+                  \end{cases}
+                  \end{equation*}
+              \) </p>
+              $$
+              \begin{equation*}
+                \begin{cases}
+                  1 + 2 + a - 5 \leq 0  \\
+                  4 - 4 + a - 5 \leq 0
+                  \end{cases}
+                \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+                \begin{cases}
+                  a \leq 2  \\
+                  a \leq 5
+                  \end{cases}
+                \end{equation*}
+              $$
+              $$ a \leq 2  $$
+              <p>Со вторым неравенством еще проще – достаточно условия \( D \leq 0 \) </p>
+              $$ 4 - 4a - 20 \leq 0; $$
+              $$ a \geq 0; $$
+              <p>Ответ:  \( [-4; 2] \) </p>
+          <a class="source"href="https://alexlarin.net/param/p32.html">источник</a>
+        </article>
+      </div>
+    </section>
+      <footer>
+  <div class="footer__item">
+    <h4>Разработка и дизайн сайта:</h4>
+    <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
+    <p>
+      <a target="_blank" href="https://forms.gle/yUb6YHzk8axmG4U26">Ваши пожелания</a>
+    </p>
+  </div>
+</footer>
+
+    <script src="js\script.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

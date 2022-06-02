@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>базовые</title>
+    <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- ico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
+    <link rel="manifest" href="ico\site.webmanifest">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  </head>
+  <body id="body" class="lock">
+    <div id="preloaderOverlay" class="preloader--overlay">
+  <div class="preloader"></div>
+</div>
+<nav>
+  <div class="nav--mobile" >
+    <div class="nav__content" id="nav__content">
+      <div class="container">
+        <a class="logo" href="index.html">a</a>
+        <a class="nav__item " href="index.html">Главная</a>
+        <a class="nav__item" href="easy.html">базовые</a>
+        <a class="nav__item" href="medium.html">повышенные</a>
+        <a class="nav__item" href="hard.html">профильные</a>
+        <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+        <!-- <a class="nav__item" href="#">о нас</a> -->
+        <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
+      </div>
+    </div>
+    <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
+      <span></span>
+    </a>
+  </div>
+</nav>
+
+    <section class="content" >
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 1</h2>
+            <small><a class="source"href="theoreticalMaterial.html#ЛинейныеУравнения">Линейные уравнения</a></small>
+            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
+            <p class="task__formula">$$(2a - 4)x = 3a + 1$$</p>
+          </div>
+          <div class="task__animation">
+            <div class="checkbox" >
+              <input   type="checkbox" id="1" class="checkbox__input" name="checkbox" value="yes">
+              <label for="1" class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer" >
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              $$2a - 4 = \frac{3a + 1}{x}$$
+
+              $$ 1) \: 2a - 4 = 0$$
+              $$a = 2$$
+              $$0 =  \frac{7}{x}$$
+              $$x \in \varnothing $$
+
+              $$ 2) \: a  \neq 2$$
+              $$x = \frac{3a + 1}{2a - 4}$$
+              <p>$$Ответ: при \: a = 2 , x = \in \varnothing $$</p>
+            </div>
+            <a class="source" href="https://math100.ru/prof-ege_2022_17-1/">источник</a>
+          </div>
+        </div>
+      </article>
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 2</h2>
+            <small><a class="source"href="theoreticalMaterial.html#ЛинейныеУравнения">Линейные уравнения</a></small>
+            <p class="task__text">Решите уравнение при всех значениях параметра а:</p>
+            <p class="task__formula">$$(a^2 - 2a + 1)x = a^2 + 2a - 3$$</p>
+          </div>
+          <div class="task__animation" >
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input" id="2" name="checkbox" value="yes">
+              <label for="2"  class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <p>заметим, что в левой части уравнения формула сокращенного умножения</p>
+              $$ (a - 1)^2 = a^2 + 2a -3 $$
+              $$ 1) (a - 1)^2 = 0 $$
+              $$ a = 1 $$
+              $$ 0x = 0 $$
+              $$ x - любой $$
+              $$ 2) a \neq 1 $$
+              $$ x =  \frac{(a - 1)^2}{a^2 + 2a -3}$$
+              <p>раскладываем знаменатель</p>
+              $$ a^2 + 2a -3 = 0 $$
+              $$\begin{equation*}
+              \begin{cases}
+              a_1 + a_2 = -2
+              \\
+              a_1 * a_2 = -3
+              \\
+              \end{cases}
+              \end{equation*}
+              $$
+              $$\begin{equation*}
+              \begin{cases}
+              a_1 = 1
+              \\
+              a_2 = -3
+              \\
+              \end{cases}
+              \end{equation*}
+              $$
+              $$ a^2 + 2a -3 = (x - 1)(x + 3)  $$
+              $$ x =  \frac{(a - 1)^2}{(x - 1)(x + 3)}$$
+              $$ x =  \frac{(a - 1)}{(x + 3)}$$
+              $$Ответ: если \: a = 1, то \: x \in R;$$
+              $$ если \:a \neq 1, \: x =  \frac{(a - 1)}{(x + 3)} $$
+            </div>
+            <a class="source" href="https://math100.ru/prof-ege_2022_17-1/">источник</a>
+          </div>
+        </div>
+      </article>
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 3</h2>
+            <small><a class="source"href="theoreticalMaterial.html#ИсследованиеДискриминанта">Исследование дискриминанта</a></small>
+            <p class="task__text">При каких значениях параметра а уравнение 2 различных решения?</p>
+            <p class="task__formula">$$ x^2 -ax + 16 = 0 $$</p>
+          </div>
+          <div class="task__animation" >
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input" id="3" name="checkbox" value="yes">
+              <label for="3"  class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <p>чтобы уравнение имело 2 различных корня, нужно чтобы D > 0. Ищем D</p>
+              <!-- $$ чтобы  \: уравнение \: имело \: 2 \: различных \: корня, \: нужно \: чтобы \: D > 0. Ищем D$$ -->
+              $$D = b^2 - 4ac $$
+              $$D = a^2 - 4 *1 * 16 > 0 $$
+              $$D = a^2 - 64 > 0 $$
+              $$D = a^2  > 64 $$
+              $$\begin{equation*}
+              \begin{cases}
+              a \geq 8
+              \\
+              a < -8
+              \\
+              \end{cases}
+              \end{equation*}
+              $$
+              <p>Ответ:  уравнение умеет  2  корня   при</p>
+              $$   \:  a \in (-\infty ; -8 ) \cup ( 8; +\infty)  $$
+            </div>
+            <a class="source" href="https://math100.ru/prof-ege_2022_17-2/">источник</a>
+          </div>
+        </div>
+      </article>
+      <section class="test">
+  <div class="container">
+    <p>Уже подготовились? Пройдите по теме <a class="source" href="https://forms.gle/1Rdxr952r9zHCxWH7">тест</a></p>
+  </div>
+</section>
+
+    </section>
+      <footer>
+  <div class="footer__item">
+    <h4>Разработка и дизайн сайта:</h4>
+    <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
+    <p>
+      <a target="_blank" href="https://forms.gle/yUb6YHzk8axmG4U26">Ваши пожелания</a>
+    </p>
+  </div>
+</footer>
+
+    <script src="js\script.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+</html>

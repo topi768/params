@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>профильные</title>
+    <!-- <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- ico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
+    <link rel="manifest" href="ico\site.webmanifest">
+    <!-- MathJax убрал async! -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script"  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  </head>
+  <body id="body" class="lock">
+    <div id="preloaderOverlay" class="preloader--overlay">
+  <div class="preloader"></div>
+</div>
+<nav>
+  <div class="nav--mobile" >
+    <div class="nav__content" id="nav__content">
+      <div class="container">
+        <a class="logo" href="index.html">a</a>
+        <a class="nav__item " href="index.html">Главная</a>
+        <a class="nav__item" href="easy.html">базовые</a>
+        <a class="nav__item" href="medium.html">повышенные</a>
+        <a class="nav__item" href="hard.html">профильные</a>
+        <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+        <!-- <a class="nav__item" href="#">о нас</a> -->
+        <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
+      </div>
+    </div>
+    <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
+      <span></span>
+    </a>
+  </div>
+</nav>
+
+    <section class="content">
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 1</h2>
+            <small><a class="source"href="theoreticalMaterial.html#Модуль">модуль</a></small>
+            <p class="task__text">Найдите все значения параметра a, при каждом из которых уравнение имеет корни, но ни один из них не принадлежит интервалу (4; 19).</p>
+            <p class="task__formula">$$ | x - a^2 + a + 2 | + | x - a^2 + 3a - 1 | = 2a - 3$$</p>
+          </div>
+          <div class="task__animation">
+            <div class="checkbox" >
+              <input   type="checkbox" id="1" class="checkbox__input" name="checkbox" value="yes">
+              <label for="1" class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer" >
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <!-- \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are -->
+              <p>Разность выражений, стоящих под знаками модуля, совпадает с правой частью уравнения:</p>
+              <p>$$  ( x - a^2 + a + 2 ) - ( x - a^2 + 3a - 1 ) = 2a - 3 $$</p>
+              <p>Сделаем замену:</p>
+              $$ m = x - a^2 + 3a - 1 $$
+              $$ n = x - a^2 + a + 2 $$
+              <p>Тогда уравнение имеет вид:</p>
+              $$ | m | + | n | = m - n $$
+              <p>Это равносильно условию \(n\leqslant0\leqslant m\). Получаем</p>
+              <p>$$  x - a^2 + a + 2 \leq 0 \leq m = x - a^2 + 3a - 1 $$</p>
+              $$  a^2 - 3a + 1 \leq x \leq a^2 - a - 2 $$
+              <p>Уравнение имеет корни, ни один из которых не принадлежит интервалу (4; 19) , только если правая граница отрезка решений не больше 4 или левая граница не меньше 19. Получаем</p>
+              $$
+              \begin{equation*}
+              \begin{cases}
+              a^2 - 3a + 1 \leq a^2 - a - 2 \\
+              \left[
+              \begin{array}{ccc}
+              a^2 - a - 2 \leq 4 \\
+              a^2 - 3a + 1 \leq 19 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+              \begin{cases}
+              2a \geq  3\\
+              \left[
+              \begin{array}{ccc}
+              a^2 - a - 6 \leq 0 \\
+              a^2 - 3a -18 \geq 0 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+              \begin{cases}
+              a \geq  1.5\\
+              \left[
+              \begin{array}{ccc}
+              (a - 3)( a + 3 ) \leq 0 \\
+              (a - 6)( a + 3 ) \geq 0 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
+              $$
+              $$
+              \begin{equation*}
+              \begin{cases}
+              a \geq  1.5\\
+              \left[
+              \begin{array}{ccc}
+              a \leq -3 \\
+              -2 \leq a \leq 3 \\
+              a \geq 6 \\
+              \end{array}
+              \right.
+              \end{cases}
+              \end{equation*}
+              $$
+              <p>Ответ: \( a \in  [1, 5; 3] \cup [6; + \infty] \)</p>
+            </div>
+            <a class="source" href="https://ege.sdamgia.ru/problem?id=507587">источник</a>
+          </div>
+        </div>
+      </article>
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 2</h2>
+            <small><a class="source"href="theoreticalMaterial.html#Модуль">модуль</a></small>
+            <p class="task__text">Найдите все значения a, при каждом из которых уравнение на промежутке \( (-1; +\infty) \) имеет больше двух корней.</p>
+            <p class="task__formula">$$ \left| \frac{5}{x-1} - 3 \right| = ax + a - 2 $$</p>
+          </div>
+          <div class="task__animation">
+            <div class="checkbox">
+              <input  onclick="formulaDerivationSolution()" type="checkbox" id="2" class="checkbox__input" name="checkbox" value="yes">
+              <label for="2" class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <p>Рассмотрим функции \( f(x) = ax + a - 2 \) и \( g(x) = \left| \frac{5}{x-1} - 3 \right| \). Исследуем уравнение \( f(x) = g(x) \) на промежутке\(  (-1; +\infty) \)</p>
+              <p>При \( a \leq 0 \) все значения функции \( f(x) \) на промежутке \(  (-1; +\infty) \)  отрицательны, а все значения функции \( g(x) \)  - неотрицательны, поэтому при \( a  \leq 0  \)  уравнение  \( f(x) = g(x) \) е имеет решений на промежутке  \(  (-1; +\infty) \)</p>
+              <p>При > 0 При   \( f(x) \)  возрастает. Функция \( g(x) \) убывает на промежутке  \( \left( -1; \frac{2}{3} \right] \), поэтому уравнение \( f(x) = g(x) \) имеет не более одного решения на промежутке \( \left( -1; \frac{2}{3} \right] \), причем решение будет существовать тогда и только тогда, когда \( f(\frac{2}{3}) 	\geq g(\frac{2}{3}) \),откуда получаем  \( a \cdot \frac{5}{3} \geq 0 \), то есть  \( a \geq \frac{6}{5} \).    </p>
+              <p>На промежутке  \( (\frac{2}{3}; +\infty) \) уравнение   \( f(x) = g(x) \)   принимает вид   \( ax + a - 2 = 3 - \frac{5}{x-1} \). Будем считать, что a > 0, поскольку случай  \( a \leq 0 \) был рассмотрен ранее. Дискриминант квадратного уравнения D = 25 - 20a, поэтому при  \( a > \frac{5}{4} \) это уравнения не имеет корней, при  \( a = \frac{5}{4} \)  уравнения имеет единственный корень, равный  1, при  \( 0 < a , \frac{5}{4} \), уравнение имеет два корня. </p>
+              <p>Если уравнение имеет два корня  \( x_1  \) и \( x_2  \), то есть  \( 0 < a , \frac{5}{4} \),  то больший корень \( x_2 = \frac{5 -2a + \sqrt{D}}{2a} > \frac{5 - 2a}{2a} > 1   > \frac{2}{3} \), поэтому он принадлежит промежутку  \( \frac{2}{3}; +\infty \).Меньший корень  \( x_1 \) принадлежит промежутку  \( {\frac{2}{3}; \infty}  \)  тогда и только тогда, когда   </p>
+              <p> $$ f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = \frac{25a - 30}{9} > 0 $$ </p>
+              <p> $$\Leftrightarrow a > \frac{6}{5}$$.</p>
+              <!-- $$  f  \left( \frac{2}{3} \right) > 0  \Leftrightarrow a \left( \frac{2}{3} \right) ^ 2 + (2a - 5) \cdot \frac{2}{3} + a = $$
+              $$ =\frac{25a - 30}{9} > 0  \Leftrightarrow a > \frac{6}{5}.$$ -->
+              <p>Таким образом, исходное уравнение  \(  \left| \frac{5}{x-1} - 3 \right| = ax + a - 2 \) имеет следующее количество корней на промежутке  \( -1; +\infty \): </p>
+              <p>-  нет корней при  \( a \leq 0  \) </p>
+              <p>- 1 корень при   \(0 < a < \frac{6}{5} \) и при \( a >  \frac{5}{4} \) </p>
+              <p>- 2 корня при \( a = \frac{6}{5}  \) и при \( a = \frac{5}{4} \) </p>
+              <p>- 3 корня при \( \frac{6}{5} < a < \frac{5}{4} \) </p>
+              <p>Ответ: \( \frac{6}{5} < a < \frac{5}{4} \))  </p>
+            </div>
+            <a class="source" href="https://ege.sdamgia.ru/problem?id=501070" >источник</a>
+          </div>
+        </div>
+      </article>
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 3</h2>
+            <small><a class="source"href="theoreticalMaterial.html#ГрафическийМетод">грифический метод</a></small>
+            <p class="task__text">При каких a уравнение имеет ровно три корня?</p>
+            <p class="task__formula">$$ | x^2 - 2x - 3 | -2a = | x - a | - 1 $$</p>
+          </div>
+          <div class="task__animation" >
+            <div class="checkbox">
+              <input type="checkbox" class="checkbox__input" id="3" name="checkbox" value="yes">
+              <label for="3"  class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer">
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <p>Запишем уравнение в виде \(  | x^2 - 2x - 3 | = | x - a | + 2a - 1\). </p>
+              <p>Построим графики левой и правой частей уравнения  \( f(x) =  | x^2 - 2x - 3 | \) и  \( | x - a | + 2a- 1 \).Первая из них парабола с отраженной отрицательной частью, а вторая график модуля с вершиной в точке  \( (a; 2a - 1) \)    </p>
+              <img src="img\hard\3\yotx.ru.png" alt="">
+              <p>Ясно, что вершина второго графика перемещается в зависимости от a по прямой  \( y = 2x - 1  \).Из рисунка видно, что подходящих значений a ровно два — при одном из них график правой части проходит через точку  \( (-1; 0) \) при другом — касается отраженного участка параболы.  </p>
+              <p>Первое происходит при a = 0, а второе — когда уравнение</p>
+              $$ 3 + 2x - x^2 = 3a - 1 - x \Leftrightarrow $$
+              $$ \Leftrightarrow x^2 - 3x + 3a - 4 = 0 $$
+              <p>имеет единственный корень, то есть в случае, когда дискриминант равен нулю.</p>
+              $$ D = 3^2 - 4(3a - 4) = 25 - 12a = 0 \Leftrightarrow a = \frac{25}{12}$$
+              <p>Ответ: \( a = 0, a = \frac{25}{12}\) </p>
+            </div>
+            <a class="source" href="https://ege.sdamgia.ru/problem?id=485982" >источник</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+      <section class="test">
+  <div class="container">
+    <p>Уже подготовились? Пройдите по теме <a class="source" href="https://forms.gle/1Rdxr952r9zHCxWH7">тест</a></p>
+  </div>
+</section>
+
+      <footer>
+  <div class="footer__item">
+    <h4>Разработка и дизайн сайта:</h4>
+    <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
+    <p>
+      <a target="_blank" href="https://forms.gle/yUb6YHzk8axmG4U26">Ваши пожелания</a>
+    </p>
+  </div>
+</footer>
+
+    <script src="js\script.min.js" ></script>
+
+  </body>
+</html>

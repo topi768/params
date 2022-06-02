@@ -1,108 +1,168 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="ru" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Жопа Антона</title>
-    <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css">
+    <title>Главная</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <!-- ico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
+    <link rel="manifest" href="ico\site.webmanifest">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="container">
-      <section class="gallery">
-
-        <div class="frame">
-          <div class="frame__content">
-            <h2>Жопа Антона</h2>
-          </div>
-        </div>
-
-        <div class="frame">
-          <div class="frame__content frame__ellips">
-
-            <div class="ellipse frame-media frame__ellipse1"></div>
-            <div class="ellipse frame-media frame__ellipse2"></div>
-            <!-- <div class="frame-media frame__ellipse1" style="background-image: url(img/Ellipse.png)"></div> -->
-
-            <!-- <div class="frame-media frame__ellipse2" style="background-image: url(img/Ellipse.png)"></div> -->
-          </div>
-        </div>
-        <div class="frame"></div>
-        <div class="frame"></div>
-        <div class="frame"></div>
-        <div class="frame"></div>
-        <div class="frame">
-          <div class="frame__content text-right">
-            <div class="frame-media frame__duck" style="background-image: url(img/duck.png)"></div>
-          </div>
-        </div>
-
-        <div class="frame frame_bg">
-          <div class="frame__content">
-            <div class="frame-media frame-media_left" style="background-image: url(images/2.jpg)"></div>
-          </div>
-        </div>
-
-        <div class="frame"></div>
-
-        <div class="frame frame_bg">
-          <div class="frame__content">
-            <div class="frame-media frame-media_right" style="background-image: url(images/3.jpg)"></div>
-          </div>
-        </div>
-
-        <div class="frame"></div>
-
-        <div class="frame">
-          <div class="frame__content text-left">
-            <div class="frame-media frame__plunger" style="background-image: url(img/plunger.png)"></div>
-
-          </div>
-        </div>
-
-        <div class="frame frame_bg">
-          <div class="frame__content">
-            <div class="frame-media frame-media_right" style="background-image: url(images/4.jpg)"></div>
-          </div>
-        </div>
-
-        <div class="frame">
-          <div class="frame__content">
-            <video class="frame-media frame-media_left" src="media/video_optimized.mp4" autoplay loop muted></video>
-          </div>
-        </div>
-
-        <div class="frame"></div>
-        <div class="frame"></div>
-
-        <div class="frame frame_bg">
-          <div class="frame__content">
-            <div class="frame-media frame-media_right" style="background-image: url(images/5.jpg)"></div>
-          </div>
-        </div>
-
-        <div class="frame frame_bg">
-          <div class="frame__content">
-            <div class="frame-media frame-media_right frame__banana" style="background-image: url(img/banana.png)"></div>
-          </div>
-        </div>
-
-        <div class="frame"></div>
-        <div class="frame"></div>
-
-        <div class="frame frame_bgC">
-          <div class="frame__content">
-            <video class="frame-media frame__video" src="video\video.mp4"  loop autoplay muted>
-
-            </video>
-          </div>
-        </div>
-
-
-      </section>
+  <body id="body" class="lock">
+    <div id="preloaderOverlay" class="preloader--overlay">
+  <div class="preloader"></div>
+</div>
+<nav>
+  <div class="nav--mobile" >
+    <div class="nav__content" id="nav__content">
+      <div class="container">
+        <a class="logo" href="index.html">a</a>
+        <a class="nav__item " href="index.html">Главная</a>
+        <a class="nav__item" href="easy.html">базовые</a>
+        <a class="nav__item" href="medium.html">повышенные</a>
+        <a class="nav__item" href="hard.html">профильные</a>
+        <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+        <!-- <a class="nav__item" href="#">о нас</a> -->
+        <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
+      </div>
     </div>
+    <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
+      <span></span>
+    </a>
+  </div>
+</nav>
 
+  <main>
+    <div class="container">
+      <div class="main__title">
+        <h1>Мы поможем вам изучить параметры</h1>
+        <p>Разбор 17 задачи, используя монотонность, графический метод или исследованием
+          дискриминанта </p>
+      </div>
+
+    </div>
+  </main>
+  <section class="difficulty">
+    <div class="container">
+      <article class="difficulty__item">
+        <a href="easy.html"><img class="difficulty__item1" src="img\difficulty\easy.svg" alt=""></a>
+        <h3>Базовые</h3>
+        <p>Уравнения с параметром</p>
+        <p>Неравенства с параметром</p>
+        <p>Системы с параметром </p>
+        <p>и др.</p>
+        <a href="easy.html">Начать</a>
+      </article>
+      <article class="difficulty__item">
+        <a href="medium.html"><img class="difficulty__item2" src="img\difficulty\medium.svg" alt=""></a>
+        <h3>Повышенные</h3>
+        <p>Расположение корней квадратного трехчлена</p>
+        <p>Использование симметрий</p>
+        <p>Использование монотонности, оценок</p>
+        <p>и др.</p>
+        <a href="medium.html">Начать</a>
+      </article>
+      <article class="difficulty__item">
+        <a href="hard.html"><img class="difficulty__item3" src="img\difficulty\hard.svg" alt=""></a>
+        <h3>Профильные</h3>
+        <p>Аналитическое решение уравнений, неравенств, систем</p>
+        <p>Координаты (x, a)</p>
+        <p>Уравнение окружности</p>
+        <a href="hard.html">Начать</a>
+      </article>
+    </div>
+  </section>
+  <section class="pueChart">
+    <div class="container">
+      <div class="pueChart__title">
+        <h2>Ответ на вопрос "будете ли вы решать задание с параметром на ЕГЭ?" </h2>
+        <small>примите участие в опросе, чтобы получить более точные данные</small>
+        <button><a target="_blank" href="https://forms.gle/XyqhhxicYVq76vRs7">опрос</a> </button>
+      </div>
+      <div class="pueChart__pueChar">
+        <canvas  width="400px" height="600px"  id="pueChart" ></canvas>
+      </div>
+    </div>
+  </section>
+  <section class="phone" id="phone">
+      <h2>Готовьтесь к 17 заданию даже на мобильном устройстве!</h2>
+      <div class="phone__container">
+        <img class="phone__item phone__item1" src="img\main\phone1.png" alt="">
+        <img class="phone__item phone__item2" src="img\main\phone2.png" alt="">
+        <img class="phone__item phone__item3" src="img\main\phone3.png" alt="">
+      </div>
+  </section>
+  <section class="opportunities">
+    <div class="container">
+      <div class="opportunities__item">
+        <img src="img\opportunities\briefcase.svg" alt="">
+        <p>весь контент очень доступен</p>
+      </div>
+      <div class="opportunities__item">
+        <img src="img\opportunities\key.svg" alt="">
+        <p>вы узнаете ключевые моменты в решении задач с параметром</p>
+      </div>
+      <div class="opportunities__item">
+        <img src="img\opportunities\box.svg" alt="">
+        <p>материал постояно обновляется</p>
+      </div>
+      <div class="opportunities__item">
+        <img src="img\opportunities\creditCard.svg" alt="">
+        <p>это всё бесплатно</p>
+      </div>
+    </div>
+  </section>
+    <footer>
+  <div class="footer__item">
+    <h4>Разработка и дизайн сайта:</h4>
+    <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
+    <p>
+      <a target="_blank" href="https://forms.gle/yUb6YHzk8axmG4U26">Ваши пожелания</a>
+    </p>
+  </div>
+</footer>
 
     <script src="js\script.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script async type="text/javascript">
+      //// получение информации из json
+      async function getUsers() {
+        let response = await fetch('https://script.googleusercontent.com/macros/echo?user_content_key=CZZeYRlqyqA2h6seOlQyTP1KSUpGrGvupRyJ3IQUuWtlgPUngZr_1CjKhLaJxtsyfxqrNEeu7Ab_YIF1WtAw8mDQgs2tC47Zm5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnJObTY6sTc9x9lnCnTGZx4dgw9ITDcFq4Vs0GzD2P_xi6asqLp15ztu3lhZi7wZg5RRUvmjnT10eeoao13lgBGvZ32noWemZrg&lib=MFcLx8y6u2GYT4jt060GHuKwVvEVRCTWr');
+        let resultAnswers = await response.json();
+        ////pueChart
+        let pueChart = document.querySelector('#pueChart').getContext('2d');
+        pueChart.canvas.parentNode.style.height = '600px';
+        pueChart.canvas.parentNode.style.width = '50%';
+        let myChart = new Chart(pueChart, {
+          type: 'pie',
+          data: {
+            labels: ['да, я собираюсь', 'не буду  их решать','не сдаю профиль'] ,
+            datasets: [{
+              data: [
+                resultAnswers.result[0][0],
+                resultAnswers.result[0][1],
+                resultAnswers.result[0][2],
+              ],
+              backgroundColor: [
+                '#6bd95a',
+                '#4276d7',
+                '#cf4d4d',
+              ],
+            }]
+          },
+          options: {
+            maintainAspectRatio: false,
+          }
+        })
+      }
+      getUsers()
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   </body>
 </html>

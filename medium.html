@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>повышенные</title>
+    <link rel="stylesheet" href="libs/font-awesome/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- ico -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico\apple-touch-icon.png">
+    <link rel="icon" type="image\png" sizes="32x32" href="ico\favicon-32x32.png">
+    <link rel="icon" type="image\png" sizes="16x16" href="ico\favicon-16x16.png">
+    <link rel="manifest" href="ico\site.webmanifest">
+    <!-- fontawesome -->
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  </head>
+  <body id="body" class="lock">
+    <div id="preloaderOverlay" class="preloader--overlay">
+  <div class="preloader"></div>
+</div>
+<nav>
+  <div class="nav--mobile" >
+    <div class="nav__content" id="nav__content">
+      <div class="container">
+        <a class="logo" href="index.html">a</a>
+        <a class="nav__item " href="index.html">Главная</a>
+        <a class="nav__item" href="easy.html">базовые</a>
+        <a class="nav__item" href="medium.html">повышенные</a>
+        <a class="nav__item" href="hard.html">профильные</a>
+        <a class="nav__item" href="theoreticalMaterial.html">теория</a>
+        <!-- <a class="nav__item" href="#">о нас</a> -->
+        <!-- <button class="nav__item nav__button button" type="button" name="button">Log In</button> -->
+      </div>
+    </div>
+    <a href="#" class="menu-btn" id="menu-btn" onclick="burger()">
+      <span></span>
+    </a>
+  </div>
+</nav>
+
+    <section class="content">
+      <article class="task">
+        <div class="task__container">
+          <div class="task__item">
+            <h2>Задание 1</h2>
+            <small><a class="source"class="source"href="theoreticalMaterial.html#Монотонность">Монотонность</a></small>
+            <p class="task__text">Найдите наименьшее значение параметра а, при котором функция является неубывающей на всей числовой прямой</p>
+            <p class="task__formula">$$ y = 9 + 7x - 3| ax + 2 | + | ax + 5 | + | x + 1 | $$</p>
+          </div>
+          <div class="task__animation">
+            <div class="checkbox" >
+              <input   type="checkbox" id="1" class="checkbox__input" name="checkbox" value="yes">
+              <label for="1" class="checkbox__label">Решение</label>
+              <span class="checkbox__line checkbox__line--top-left"></span>
+              <span class="checkbox__line checkbox__line--top-right"></span>
+              <span class="checkbox__line checkbox__line--right"></span>
+              <span class="checkbox__line checkbox__line--left"></span>
+              <span class="checkbox__line checkbox__line--bottom"></span>
+            </div>
+          </div>
+        </div>
+        <div class="answer" >
+          <div class="answer__container">
+            <span class="checkbox__line answer__line--top-left"></span>
+            <span class="checkbox__line answer__line--top-right"></span>
+            <div class="answer__content">
+              <p>Данная функция определена на всей числовой прямой и при
+                любом значении параметра а является кусочно-линейной. Точки</p>
+                $$ -1, -\frac{ 2 } { a }, -\frac{ 5 } { a } $$
+                <p>разбивают числовую прямую на промежутки, на каждом из которых функция
+                  является линейной. Рассмотрим случай a < 0. Тогда</p>
+                  $$ -1 < -\frac{ 2 } { a } < -\frac{ 5 } { a } $$
+                  <p>При раскрытие модулей получаем:</p>
+                  <p> если  \( x < -1 \) , то \( y = 9 + 7x - 3ax - 6 + ax + 5 - x  - 1 = (6 - 2a)x + 7 \) </p>
+                  <p> если  \( -1 \leq x < -\frac{2}{a} \), то \( y = 9 + 7x - 3ax - 6 + ax + 5 + x  + 1 = (8 - 2a)x + 9 \)</p>
+                  <p> если  \( -\frac{2}{a} \leq x < -\frac{5}{a} \), то \( y = 9 + 7x + 3ax + 6 + ax + 5 + x  + 1 = (8 - 4a)x + 21 \)</p>
+                  <p> если  \(  x \geq  -\frac{5}{a} \), то \( y = 9 + 7x + 3ax + 6 - ax - 5 + x  + 1 = (8 + 2a)x + 11 \)</p>
+                  <p>Для того чтобы функция не убывала, необходимо и достаточно, чтобы все полученные значения угловых коэффициентов прямых были неотрицательными. Следовательно,</p>
+                  $$
+                  \begin{equation*}
+                  \begin{cases}
+                  a < 0
+                  \\
+                  6 - 2a \geq 0
+                  \\
+                  8 - 2a \geq 0
+                  \\
+                  8 - 4a \geq 0
+                  \\
+                  8 + 2a \geq 0
+                  \end{cases}
+                  \end{equation*}
+                  $$
+                  <p>получаем:</p>
+                  $$ -2 \leq a < 0 $$
+                  <p>Отсюда получаем наименьшее значение параметра, равное -2. Так как по условию задачи нужно найти наименьшее значение а, то случай а > 0 рассматривать не нужно.</p>
+                </div>
+                <a class="source" href="https://math100.ru/prof-ege_2022_17-6/" >источник </a>
+              </div>
+            </div>
+          </article>
+          <article class="task">
+            <div class="task__container">
+              <div class="task__item">
+                <h2>Задание 2</h2>
+                <small><a class="source"class="source"href="theoreticalMaterial.html#Модуль">Модуль</a></small>
+                <p class="task__text">Найдите все значения а, при каждом из которых уравнение имеет единственный корень. </p>
+                <p class="task__formula">$$x^2 + (a - 3)^2 = | x + 3 - a | | x + a - 3 |$$</p>
+              </div>
+              <div class="task__animation" >
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="2" name="checkbox" value="yes">
+                  <label for="2"  class="checkbox__label">Решение</label>
+                  <span class="checkbox__line checkbox__line--top-left"></span>
+                  <span class="checkbox__line checkbox__line--top-right"></span>
+                  <span class="checkbox__line checkbox__line--right"></span>
+                  <span class="checkbox__line checkbox__line--left"></span>
+                  <span class="checkbox__line checkbox__line--bottom"></span>
+                </div>
+              </div>
+            </div>
+            <div class="answer">
+              <div class="answer__container">
+                <span class="checkbox__line answer__line--top-left"></span>
+                <span class="checkbox__line answer__line--top-right"></span>
+                <div class="answer__content">
+                  $$  \textnormal {если}   \; x_0   \textnormal{является корнем исходного уравнения, то и}  $$
+                  $$   \; -x_0 \;  \textnormal{является его корнем. Значит,}$$
+                  $$ \textnormal{исходное уравнение имеет единственный корень,} $$
+                  $$\textnormal{только если }  x_0 = -x_0 \textnormal{ то есть }  x_0 = 0  \textnormal{ Подставим }$$
+                  $$ \textnormal{значение x = 0 в исходное уравнение:}  $$
+                  $$ (a - 3)^2 = | 3 - a | + | a - 3 | $$
+                  $$ | a - 3 | (| a - 3 | - 2)  = 0$$
+                  $$ | a - 3 | (| a - 3 | - 2)  = 0$$
+                  $$ \textnormal{откуда либо |a − 3| = 0 ⇔ a = 3,}$$
+                  $$ \textnormal{либо |a − 3| = 2 ⇔ a = 1, или a = 5.} $$
+                  <p>При a = 3 исходное уравнение принимает вид: \( x^2 = 2|x| \) Корнями этого уравнения являются числа  −2; 0, 2, то есть исходное уравнение имеет более одного корня.</p>
+                  <!-- $$ \textnormal{При a = 3 исходное уравнение принимает вид: }$$
+                  $$ x^2 = 2|x| \textnormal{Корнями этого уравнения являются числа}$$ -->
+                  <!-- $$ −2; 0, 2, $$
+                  $$ \textnormal{то есть исходное уравнение имеет более одного корня. } $$ -->
+                  <p>При a = 1 и при a = 5 уравнение принимает вид: </p>
+                  <!-- $$ \textnormal{При a = 1 и при a = 5 уравнение принимает вид: } $$ -->
+                  $$ x^2 + 4 = | x - 2 | + | x  + 2 | $$
+                  <p>При x < − 2 это уравнение сводится к уравнению:</p>
+                  <p> \( x^2 + 2x + 4 = 0 \), которое не имеет корней</p>
+                  <!-- $$ \textnormal{При x < − 2 это уравнение сводится к уравнению:} $$ -->
+                  <!-- $$ x^2 + 2x + 4 = 0 \textnormal{, которое не имеет корней}$$ -->
+                  <!-- <p>При  −2 ≤ x ≤ 2 получаем уравнение:</p> -->
+                  <p>При  −2 ≤ x ≤ 2 получаем уравнение</p>
+                  <p> \(  x^2 = 0 \), имеющее 1 корень</p>
+                  <!-- $$ \textnormal{При  −2 ≤ x ≤ 2 получаем уравнение} x^2 = 0 $$
+                  $$ \textnormal{имеющее 1 корень}  $$ -->
+                  <p>При > 2 получаем уравнение</p>
+                  <p> \( x^2 - 2x + 4 = 0 \), которое не имеет корней</p>
+                  <!-- $$ \textnormal{При > 2 получаем уравнение } x^2 - 2x + 4 = 0 $$ -->
+                  <!-- $$ \textnormal{которое не имеет корней. При a = 1 и при a = 5} $$ -->
+                  <p>При a = 1 и при a = 5 исходное уравнение имеет единственный корень.</p>
+                  <!-- $$\textnormal{исходное уравнение имеет единственный корень.} $$ -->
+                </div>
+                <a class="source" href="https://ege.sdamgia.ru/problem?id=501713" >источник </a>
+              </div>
+            </div>
+          </article>
+          <article class="task">
+            <div class="task__container">
+              <div class="task__item">
+                <h2>Задание 3</h2>
+                <small><a class="source" href="theoreticalMaterial.html#ГрафическийМетод">Графический метод</a></small>
+                <p class="task__text">Найти все значения параметра p, при каждом из которых уравнение относительно переменной x имеет ровно 4 решения.</p>
+                <p class="task__formula">$$ | x^2 - 36 | - 8 |x - p| + 2p = 0 $$</p>
+              </div>
+              <div class="task__animation">
+                <div class="checkbox">
+                  <input type="checkbox" class="checkbox__input" id="3" name="checkbox"  value="yes">
+                  <label for="3"  class="checkbox__label">Решение</label>
+                  <span class="checkbox__line checkbox__line--top-left"></span>
+                  <span class="checkbox__line checkbox__line--top-right"></span>
+                  <span class="checkbox__line checkbox__line--right"></span>
+                  <span class="checkbox__line checkbox__line--left"></span>
+                  <span class="checkbox__line checkbox__line--bottom"></span>
+                </div>
+              </div>
+            </div>
+            <div class="answer">
+              <div class="answer__container">
+                <span class="checkbox__line answer__line--top-left"></span>
+                <span class="checkbox__line answer__line--top-right"></span>
+                <div class="answer__content">
+                  <p>Применим графическое решение. Запишем иначе:</p>
+                  $$ | x^2 - 36 |= 8 | x - p | - 2p $$
+                  <p>Слева имеем параболу, график которой, вследствие наличия модуля, располагается только в верхней полуплоскости, вся его «подводная» часть отражена вверх:</p>
+                  <img src="img\medium\3\1.png">
+                  <p>Справа имеем «галочку», вершина этой галочки будет перемещаться по прямой y=-2x. То, что график выглядит, как «галка», понятно, но как была установлена траектория движения ее вершинки? А вот как:</p>
+                  $$ y = 8 | x - p | - 2p $$
+                  <p>Модуль может быть раскрыт как с плюсом, так и с минусом в зависимости от знака подмодульного выражения:</p>
+                  \begin{equation*}
+                   \begin{cases}
+                     y = 8(x - p) - 2p\\
+                      y = 8(p - x) - 2p
+                   \end{cases}
+                  \end{equation*}
+                  <p>Тогда</p>
+                  \begin{equation*}
+                   \begin{cases}
+                     y = 8x - 8p - 2p\\
+                      y = 6p - 8x - 2p
+                   \end{cases}
+                  \end{equation*}
+                  <p>Вычитаем уравнения:</p>
+                  $$ 16x = 16p $$
+                  $$ x = p $$
+                  <p>Тогда</p>
+                  $$ y = 8x - 16x = -2x $$
+                  <p>Теперь исследуем полученную систему двух графиков. Нас устраивают случаи, когда «галка» 4 раза пересекает параболу. Начинаем двигать нашу галочку слева направо:</p>
+                  <img src="img\medium\3\2.png">
+                  <p>В указанном положении будем иметь два корня. Поэтому продолжаем двигать галку вниз:</p>
+                  <img src="img\medium\3\3.png">
+                  <p>Когда «галка»  своим правым крылом коснется параболы, ее отраженного, внутреннего кусочка, у нас получится три решения. А чуть только мы сдвинемся еще чуть ниже – уже 4. Определим значение параметра при касании, это начальная точка того интервала, который нас интересует.</p>
+                  <p>Определить значение параметра в этом случае просто. Правое крыло «галки» описывается уравнением: y=8x-10p. При касании ордината точки, принадлежащей параболе, и ордината точки, принадлежащей прямой, одинаковы, поэтому приравняем ординаты. Та часть параболы, которой касается прямая, описывается уравнением</p>
+                  $$ y = 36 - x^2 $$
+                  <p>Тогда, приравняв ординаты, получим:</p>
+                  $$ 36 - x^2 = 8x - 10p $$
+                  $$ x^2 + 8x - 10p - 36 = 0 $$
+                  <p>Если общая точка одна, то дискриминант будет равен 0:</p>
+                  <p>$$ D = b^2 - 4ac = 64 - 4(-10p - 36) = 0 $$</p>
+                  $$ 40p = -208 $$
+                  $$ p = -5,2 $$
+                  <p>Сама эта точка нас еще не устраивает, но значения параметра, большие -5,2, уже подходят нам. Выясним, до какого момента будем иметь 4 пересечения:</p>
+                  <img src="img\medium\3\4.png">
+                  <p>В показанном положении снова будем иметь три пересечения. В этот момент правое крыло «галки» проходит через точку (6;0), тогда</p>
+                  $$ 8x - 10p = 0 $$
+                  $$ p = 4,8 $$
+                  <p>Итак, найден интервал решений \( p \in (-5,2 ;4,8) \)</p>
+                  <p>Однако, вдруг это еще не все решения? Сдвинем «галку» еще ниже:</p>
+                  <img src="img\medium\3\5.png">
+                  <p>Видим,  что снова, при прохождении левого крыла «галки» через точку (6;0), появились три корня. Небольшой сдвиг еще чуть ниже даст четыре корня, и эта ситуация нас устраивает, следовательно, имеем еще один интервал решений. Определим значение параметра. Левое крыло «галки» описывается уравнением:</p>
+                  $$ y = 6p - 8x $$
+                  <p>Подставляем координаты точки в уравнение:</p>
+                  $$ 0 = 6p - 48 $$
+                  $$ p  = 8 $$
+                  <p>Сдвигаем «галку» еще ниже, и получаем касание:</p>
+                  <img src="img\medium\3\6.png">
+                  <p>Приравниваем ординаты:</p>
+                  $$ 36 - x^2 = 6p - 8x $$
+                  $$ x ^ 2 - 8x + 6p - 36 = 0 $$
+                  <p>Если общая точка одна, то дискр
+                  иминант будет равен 0:</p>
+                  $$ D = 64 - 4(6p - 36) $$
+                  $$ p = 8 \frac{2}{3} $$
+                  <p>Полученное значение параметра нас уже не устраивает: при таком p снова имеем три решения.</p>
+                  <p>Вот и второй интервал: \( p \in (9 ;8 \frac{2}{3}) \) </p>
+                  <p>Ответ: \( p \in (-5,2 ;4,8)  \cup  (9 ;8 \frac{2}{3}) \) </p>
+                </div>
+                <a class="source" href="https://easy-physic.ru/zadacha-s-parametrom-i-modulem/" >источник </a>
+              </div>
+            </div>
+          </article>
+    </section>
+    <section class="test">
+  <div class="container">
+    <p>Уже подготовились? Пройдите по теме <a class="source" href="https://forms.gle/1Rdxr952r9zHCxWH7">тест</a></p>
+  </div>
+</section>
+
+    <footer>
+  <div class="footer__item">
+    <h4>Разработка и дизайн сайта:</h4>
+    <p>Цуканников Кирилл <a href="https://github.com/topi768"><i class="fab fa-github"></i></a><a href="https://vk.com/id457776760"><i class="fab fa-vk"></i></a></p>
+    <p>
+      <a target="_blank" href="https://forms.gle/yUb6YHzk8axmG4U26">Ваши пожелания</a>
+    </p>
+  </div>
+</footer>
+
+    <script type="text/javascript">
+      MathJax.Hub.Config({
+          CommonHTML: {
+            linebreaks: {
+              automatic: true
+            }
+          }
+        });
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="js\script.min.js"></script>
+  </body>
+</html>

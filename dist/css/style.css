@@ -7402,6 +7402,10 @@ main .container .main__title p {
   color: #869094;
 }
 
+main .main__formula {
+  color: #c1cdd1;
+}
+
 .difficulty {
   margin: 8% 0;
   text-align: center;

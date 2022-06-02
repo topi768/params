@@ -27,15 +27,15 @@ for(let i = 0; i < input.length; i++) {
     }, false);
 }
 // hover page
-function hoverPage() {
-  let title = document.getElementsByTagName("title")[0].innerHTML;
-  let nav__items = document.querySelectorAll('.nav__item');
-  for (let nav__item of nav__items) {
-    if (nav__item.innerHTML == title) {
-      nav__item.classList.add('nav__item__hover');
-    }
-  }
-}
+// function hoverPage() {
+//   let title = document.getElementsByTagName("title")[0].innerHTML;
+//   let nav__items = document.querySelectorAll('.nav__item');
+//   for (let nav__item of nav__items) {
+//     if (nav__item.innerHTML == title) {
+//       nav__item.classList.add('nav__item__hover');
+//     }
+//   }
+// }
  hoverPage()
  //
  function formulaDerivationSolution() {
